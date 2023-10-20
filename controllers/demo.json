@@ -1,0 +1,607 @@
+{
+  "resuls": [
+      {
+          "Categoria": "C01",
+          "Desc": "Makeup",
+          "Imag1": null,
+          "Imag2": null,
+          "Imag4": null,
+          "Imag5": null,
+          "Slider": null,
+          "Vistas": 0,
+          "SubCategoria": [
+              {
+                  "Clasi": "C001",
+                  "Desc": "Face",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C002",
+                  "Desc": "Eye",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C003",
+                  "Desc": "Lip",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C004",
+                  "Desc": "Cheek",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C005",
+                  "Desc": "Brushes & Applicators",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C006",
+                  "Desc": "Accessories",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C007",
+                  "Desc": "Colecciones",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "Categoria": "C02",
+          "Desc": "Bath and Body",
+          "Imag1": null,
+          "Imag2": null,
+          "Imag4": null,
+          "Imag5": null,
+          "Slider": null,
+          "Vistas": 0,
+          "SubCategoria": [
+              {
+                  "Clasi": "C008",
+                  "Desc": "Bath & Shower",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C009",
+                  "Desc": "Body Moisturizers",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C010",
+                  "Desc": "Body Care",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "Categoria": "C03",
+          "Desc": "Hair",
+          "Imag1": null,
+          "Imag2": null,
+          "Imag4": null,
+          "Imag5": null,
+          "Slider": null,
+          "Vistas": 0,
+          "SubCategoria": [
+              {
+                  "Clasi": "C011",
+                  "Desc": "Shampoo & Conditioner",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C012",
+                  "Desc": "Treatments",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C013",
+                  "Desc": "Curly, Coily, Textured Haircare",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C014",
+                  "Desc": "Accesorios",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "Categoria": "C04",
+          "Desc": "Sunscreen",
+          "Imag1": null,
+          "Imag2": null,
+          "Imag4": null,
+          "Imag5": null,
+          "Slider": null,
+          "Vistas": 0,
+          "SubCategoria": [
+              {
+                  "Clasi": "C015",
+                  "Desc": "Para el cuerpo",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C016",
+                  "Desc": "Para la cara",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "Categoria": "C05",
+          "Desc": "Fragance",
+          "Imag1": null,
+          "Imag2": null,
+          "Imag4": null,
+          "Imag5": null,
+          "Slider": null,
+          "Vistas": 0,
+          "SubCategoria": [
+              {
+                  "Clasi": "C017",
+                  "Desc": "For Men",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C018",
+                  "Desc": "For Women",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "Categoria": "C06",
+          "Desc": "Skin Care",
+          "Imag1": null,
+          "Imag2": null,
+          "Imag4": null,
+          "Imag5": null,
+          "Slider": null,
+          "Vistas": 0,
+          "SubCategoria": [
+              {
+                  "Clasi": "C019",
+                  "Desc": "Cleansers",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C020",
+                  "Desc": "Treatments",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C021",
+                  "Desc": "Eye Care",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C022",
+                  "Desc": "Tonicos",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              },
+              {
+                  "Clasi": "C023",
+                  "Desc": "Men's Care",
+                  "Img1": null,
+                  "Img2": null,
+                  "Img4": null,
+                  "Img5": null,
+                  "Slider": null,
+                  "Vistas": 0,
+                  "Tipo": [
+                      {
+                          "Clasi": "C0001",
+                          "Desc": "Demoo",
+                          "Img1": "",
+                          "Img2": "",
+                          "Img3": "",
+                          "Img4": "",
+                          "Img5": "",
+                          "Slider": "",
+                          "Visitas": 0
+                      }
+                  ]
+              }
+          ]
+      }
+  ],
+  "result": "true",
+  "error": []
+}
