@@ -559,7 +559,7 @@ const generarCodigo = async (req, res) => {
     try {
       //Envio de eamil
       await transporter.sendMail({
-        from: '"Soporte Bellmart S.A.de C.V." <no-reply@bellmart.com>', // sender address
+        from: '"Soporte Bellmart S.A.de C.V." <no-reply@ama-belle.com>', // sender address
         to: email, // list of receivers
         subject: "Su clave de acesso es :" + code, // Subject line
         html: `
@@ -639,7 +639,10 @@ const generarCodigo = async (req, res) => {
     } catch (error) {
       emailStatus = error;
       return res.status(400).send({
-        results: { results: { message: "Existe un problema en el proceso" } },
+        results: {
+          results: { message: "Existe un problema en el proceso" },
+          error: emailStatus,
+        },
         result: false,
         error: emailStatus,
       });

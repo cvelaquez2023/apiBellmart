@@ -75,6 +75,7 @@ const getItemsTipo = async (req, res) => {
 };
 const getItem = async (req, res) => {
   try {
+    console.log("entramos a ver getItem");
     const agru = req.params.clas;
     const bodega = req.query.bodega;
     const nivelPrecio = req.query.nivelPrecio;
@@ -122,7 +123,8 @@ const getArticulos = async (req, res) => {
   }
 };
 
-const todos = async (req, res) => {
+const gettodos = async (req, res) => {
+  console.log("entramos a ver todos");
   try {
     const nivelPrecio = req.query.nivelprecio;
     const bodega = req.query.bodega;
@@ -145,6 +147,7 @@ const todos = async (req, res) => {
 };
 const putVerTienda = async (req, res) => {
   try {
+    x;
     const articulo = req.body.articulo;
     const verTienda = req.body.vertienda;
     //Actualizamos en el campo Ver en Tienda
@@ -229,7 +232,7 @@ const ActualizarPeso = async (req, res) => {
       },
       { where: { ARTICULO: articulo } }
     );
-    
+
     return res.send({ results: updateArticulo, result: true, total: 0 });
   } catch (error) {
     return res.send({ results: error, result: false, total: 0 });
@@ -237,7 +240,7 @@ const ActualizarPeso = async (req, res) => {
 };
 module.exports = {
   getItem,
-  todos,
+  gettodos,
   getArticulos,
   getItemsCat,
   getItemsSubCat,

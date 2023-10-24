@@ -12,6 +12,7 @@ const {
   todos,
   putVerTienda,
   ActualizarPeso,
+  gettodos,
 } = require("../controllers/articulo");
 const authMiddleware = require("../middleware/session");
 const checkRol = require("../middleware/rol");
@@ -21,17 +22,14 @@ const router = express.Router();
 router.get("/cat/", getItemsCat);
 router.get("/subcat/", getItemsSubCat);
 router.get("/tipo/", getItemsTipo);
-router.get("/:clas", getItem);
+router.get("/getAll", gettodos);
 router.get("/", getArticulos);
 router.get("/buscar/", getsearch);
-router.put("/todos/", authMiddleware, checkRol(["Admin"]), todos);
-router.put(
-  "/peso",
-  authMiddleware,
-  checkRol(["Admin"]),
-  ActualizarPeso
-);
+router.get("/:clas", getItem);
 router.put("/putvertienda/", authMiddleware, checkRol(["Admin"]), putVerTienda);
+
+router.put("/peso", authMiddleware, checkRol(["Admin"]), ActualizarPeso);
+
 router.put("/visita", putVisita);
 router.put("/:clas", PutItem, authMiddleware, checkRol(["Admin"]), putItem);
 //Ver articulos
