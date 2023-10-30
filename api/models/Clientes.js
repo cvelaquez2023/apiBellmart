@@ -12,6 +12,9 @@ const Cliente = sequelize.define(
     NOMBRE: {
       type: DataTypes.STRING,
     },
+    DETALLE_DIRECCION: {
+      type: DataTypes.INTEGER,
+    },
     ALIAS: {
       type: DataTypes.STRING,
     },

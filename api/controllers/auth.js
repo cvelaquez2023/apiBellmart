@@ -243,6 +243,13 @@ const loginCtrl = async (req, res) => {
         "Telefono1",
         "E_Mail",
         "CONFIRN",
+        "NOMBRES",
+        "APELLIDOS",
+        "RUBRO3_CLI",
+        "RUBRO4_CLI",
+        "RUBRO5_CLI",
+        "RECIBIR_BOLETIN",
+        "TELEFONO1",
       ],
       where: {
         E_Mail: req.E_Mail,
@@ -303,6 +310,13 @@ const loginCodigo = async (req, res) => {
         "Telefono1",
         "E_Mail",
         "CONFIRN",
+        "NOMBRES",
+        "APELLIDOS",
+        "RUBRO3_CLI",
+        "RUBRO4_CLI",
+        "RUBRO5_CLI",
+        "RECIBIR_BOLETIN",
+        "TELEFONO1",
       ],
       where: {
         E_Mail: req.E_Mail,
@@ -759,6 +773,39 @@ const editarCliente = async (req, res) => {
     });
   }
 };
+const editarClienteJuridico = async (req, res) => {
+  try {
+    const nombre = req.body.nombreCop;
+    const nombreCom = req.body.nombreCom;
+    const documento = req.body.documentoCopr;
+    const telefono = req.body.telefonoCopr;
+    const cliente = req.cliente;
+    const codigo = req.cliente.CLIENTE;
+
+    const actu = await clienteModel.update(
+      {
+        NOMBRE: nombre,
+        ALIAS: nombreCom,
+        RUBRO3_CLI: documento,
+        NOMBRE: nombre,
+        TELEFONO1: telefono,
+      },
+      { where: { CLIENTE: codigo } }
+    );
+
+    res.send({
+      results: actu,
+      result: true,
+      error: "",
+    });
+  } catch (error) {
+    res.send({
+      results: error,
+      result: false,
+      error: error,
+    });
+  }
+};
 const dirClienteNew = async (req, res) => {};
 const dirClienteUpdate = async (req, res) => {};
 module.exports = {
@@ -772,6 +819,7 @@ module.exports = {
   generarCodigo,
   validarCode,
   editarCliente,
+  editarClienteJuridico,
   dirClienteNew,
   dirClienteUpdate,
 };

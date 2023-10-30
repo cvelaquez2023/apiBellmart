@@ -19,6 +19,7 @@ const {
   editarCliente,
   dirClienteNew,
   dirClienteUpdate,
+  editarClienteJuridico,
 } = require("../controllers/auth");
 const authMiddleware = require("../middleware/session");
 const checkRol = require("../middleware/rol");
@@ -52,6 +53,14 @@ router.put(
   checkRol(["User", "Admin"]),
   editarCliente
 );
+// editar datos el cliente cOPR
+router.put(
+  "/editarJur",
+  authMiddleware,
+  checkRol(["User", "Admin"]),
+  editarClienteJuridico
+);
+
 router.post("/direcionNew", dirClienteNew);
 router.put("/direcionUpdate", dirClienteUpdate);
 module.exports = router;

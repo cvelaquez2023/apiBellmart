@@ -22,7 +22,7 @@ const router = express.Router();
 router.get("/cat/", getItemsCat);
 router.get("/subcat/", getItemsSubCat);
 router.get("/tipo/", getItemsTipo);
-router.get("/getAll", gettodos);
+router.get("/getAll", authMiddleware, checkRol(["Admin"]), gettodos);
 router.get("/", getArticulos);
 router.get("/buscar/", getsearch);
 router.get("/:clas", getItem);

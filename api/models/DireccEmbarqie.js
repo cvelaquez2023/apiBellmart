@@ -20,23 +20,8 @@ const DireccEmbarque = sequelize.define(
     DESCRIPCION: {
       type: DataTypes.STRING,
     },
-    CONCTATO: {
-      type: DataTypes.STRING,
-    },
-    CARGO: {
-      type: DataTypes.STRING,
-    },
-    TELEFONO: {
-      type: DataTypes.STRING,
-    },
-    FAX: {
-      type: DataTypes.STRING,
-    },
-    EMAIL: {
-      type: DataTypes.NUMBER,
-    },
   },
-  { timestamps: false }
+  { timestamps: false, hasTrigger: true }
 );
 
 module.exports = DireccEmbarque;

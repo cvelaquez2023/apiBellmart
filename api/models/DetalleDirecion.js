@@ -43,7 +43,7 @@ const DetalleDirecion = sequelize.define(
       type: DataTypes.STRING,
     },
   },
-  { timestamps: false }
+  { timestamps: false, hasTrigger: true }
 );
 
 module.exports = DetalleDirecion;

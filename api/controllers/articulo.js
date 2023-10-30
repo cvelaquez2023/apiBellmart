@@ -124,7 +124,6 @@ const getArticulos = async (req, res) => {
 };
 
 const gettodos = async (req, res) => {
-  console.log("entramos a ver todos");
   try {
     const nivelPrecio = req.query.nivelprecio;
     const bodega = req.query.bodega;
@@ -147,7 +146,6 @@ const gettodos = async (req, res) => {
 };
 const putVerTienda = async (req, res) => {
   try {
-    x;
     const articulo = req.body.articulo;
     const verTienda = req.body.vertienda;
     //Actualizamos en el campo Ver en Tienda
@@ -160,6 +158,7 @@ const putVerTienda = async (req, res) => {
     );
     return res.send({ results: updateArticulo, result: true, total: 0 });
   } catch (error) {
+    console.log(error);
     return res.send({ results: error, result: false, total: 0 });
   }
 };
@@ -180,10 +179,10 @@ const putItem = async (req, res) => {
     const results = await articuloModel.update(
       {
         GALERIA_IMAGENES: req.body.GALERIA_IMAGENES,
-        IMAGEN_VERTICAL: req.IMAGEN_VERTICAL,
-        IMAGEN_HORIZONTAL: req.IMAGEN_HORIZONTAL,
-        IMAGEN: req.IMAGEN,
-        ESPECIFICACIONES: req.ESPECIFICACIONES,
+        IMAGEN_VERTICAL: req.body.IMAGEN_VERTICAL,
+        IMAGEN_HORIZONTAL: req.body.IMAGEN_HORIZONTAL,
+        IMAGEN: req.body.IMAGEN,
+        ESPECIFICACIONES: req.body.ESPECIFICACIONES,
       },
       { where: { ARTICULO: agru } }
     );
