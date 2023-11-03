@@ -388,9 +388,14 @@ const forgotPassword = async (req, res) => {
         E_Mail: email,
       },
     });
-    const token = await tokenSignReset(cliente);
 
-    let url = string;
+    nuevo = JSON.stringify(cliente[0]);
+    nuevo = JSON.parse(nuevo);
+
+    const token = await tokenSignReset(nuevo);
+
+    let url = "";
+
     if (ssl == "N") {
       url = `http://${host}/new-password/${token}`;
     } else {
@@ -399,7 +404,7 @@ const forgotPassword = async (req, res) => {
     verificactionLink = url;
 
     //actualizamos token en la base de datos
-
+    console.log(verificactionLink);
     const updateToken = await clienteModel.update(
       {
         RESET_TOKEN: token,
@@ -412,8 +417,9 @@ const forgotPassword = async (req, res) => {
   //TODO: send Email
   try {
     //Envio de eamil
+
     await transporter.sendMail({
-      from: '"Soporte Bellmart S.A.de C.V." <no-reply@bellmart.com>', // sender address
+      from: '"Soporte Bellmart S.A.de C.V." <no-reply@ama-belle.com>', // sender address
       to: email, // list of receivers
       subject: "Recuperacion de Contraseña", // Subject line
       html: `
@@ -423,9 +429,10 @@ const forgotPassword = async (req, res) => {
     });
   } catch (error) {
     emailStatus = error;
-    return res
-      .status(400)
-      .send({ message: "Existen un Problema en el Proceso" });
+    return res.status(400).send({
+      message: "Existen un Problema en el Procesosasasas",
+      error: emailStatus,
+    });
   }
 
   res.send({ message, info: emailStatus });

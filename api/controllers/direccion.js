@@ -18,55 +18,68 @@ const getDireccion = async (req, res) => {
     nuevo = JSON.parse(nuevo);
 
     //CONSULTAMOS LA DIRECCION DE EMBARQUE
-    const _direEmbarque = await direccEmbarqueModel.findAll({
-      attributes: ["DETALLE_DIRECCION"],
-      where: { CLIENTE: cliente.CLIENTE },
-    });
+    if (_cliente[0].DETALLE_DIRECCION) {
+      const _direEmbarque = await direccEmbarqueModel.findAll({
+        attributes: ["DETALLE_DIRECCION"],
+        where: { CLIENTE: cliente.CLIENTE },
+      });
 
-    nuevo3 = JSON.stringify(_direEmbarque[0]);
-    nuevo3 = JSON.parse(nuevo3);
+      nuevo3 = JSON.stringify(_direEmbarque[0]);
+      nuevo3 = JSON.parse(nuevo3);
+      let _envio = [];
+      for (let x = 0; x < _direEmbarque.length; x++) {
+        const element = _direEmbarque[x];
+        const _dirEmbarqueCliente = await detalleDireccionModel.findAll({
+          attributes: [
+            "DETALLE_DIRECCION",
+            "DIRECCION",
+            "CAMPO_1",
+            "CAMPO_2",
+            "CAMPO_3",
+            "CAMPO_4",
+            "CAMPO_5",
+            "CAMPO_6",
+            "CAMPO_7",
+          ],
+          where: { DETALLE_DIRECCION: element.DETALLE_DIRECCION },
+        });
+        nuevo4 = JSON.stringify(_dirEmbarqueCliente[0]);
+        nuevo4 = JSON.parse(nuevo4);
+        _envio.push(nuevo4);
+      }
+      const _IdDetaDire = nuevo.DETALLE_DIRECCION;
+      const _dirDetalleCliente = await detalleDireccionModel.findAll({
+        attributes: [
+          "DETALLE_DIRECCION",
+          "DIRECCION",
+          "CAMPO_1",
+          "CAMPO_2",
+          "CAMPO_3",
+          "CAMPO_4",
+          "CAMPO_5",
+          "CAMPO_6",
+          "CAMPO_7",
+        ],
+        where: { DETALLE_DIRECCION: _IdDetaDire },
+      });
 
-    const _dirEmbarqueCliente = await detalleDireccionModel.findAll({
-      attributes: [
-        "DETALLE_DIRECCION",
-        "DIRECCION",
-        "CAMPO_1",
-        "CAMPO_2",
-        "CAMPO_3",
-        "CAMPO_4",
-        "CAMPO_5",
-        "CAMPO_6",
-        "CAMPO_7",
-      ],
-      where: { DETALLE_DIRECCION: nuevo3.DETALLE_DIRECCION },
-    });
+      nuevo2 = JSON.stringify(_dirDetalleCliente[0]);
+      nuevo2 = JSON.parse(nuevo2);
 
-    nuevo4 = JSON.stringify(_dirEmbarqueCliente[0]);
-    nuevo4 = JSON.parse(nuevo4);
-
-    const _IdDetaDire = nuevo.DETALLE_DIRECCION;
-    const _dirDetalleCliente = await detalleDireccionModel.findAll({
-      attributes: [
-        "DETALLE_DIRECCION",
-        "DIRECCION",
-        "CAMPO_1",
-        "CAMPO_2",
-        "CAMPO_3",
-        "CAMPO_4",
-        "CAMPO_5",
-        "CAMPO_6",
-        "CAMPO_7",
-      ],
-      where: { DETALLE_DIRECCION: _IdDetaDire },
-    });
-    nuevo2 = JSON.stringify(_dirDetalleCliente[0]);
-    nuevo2 = JSON.parse(nuevo2);
-    const direccionesCliente = {
-      direccion: nuevo2,
-      envio: nuevo4,
-    };
-    res.send({ results: direccionesCliente, result: true, total: 1 });
+      const direccionesCliente = {
+        direccion: nuevo2,
+        envio: _envio,
+      };
+      res.send({ results: direccionesCliente, result: true, total: 1 });
+    } else {
+      return res.send({
+        results: "CLIENTE NO TIENE DIRECCION ASIGNADA",
+        result: true,
+        total: 0,
+      });
+    }
   } catch (error) {
+    console.log(error);
     res.send({ results: "error", result: false, message: error });
   }
 };
@@ -79,39 +92,34 @@ const postDireccion = async (req, res) => {
     const calle = req.body.calle;
     const direccion = req.body.direccion;
     const destinatario = req.body.destinatario;
-    const direEnvio = req.body.direEnvio;
     const standar = "ESTANDAR";
     const cliente = req.cliente;
 
-    //Buscamos si ya existe la direccion
-    const existeDetalleDireccion = await clienteModel.findOne({
-      where: { CLIENTE: cliente.CLIENTE },
-    });
-
     //SI ES NULL la direccion
-    if (!existeDetalleDireccion.DETALLE_DIRECCION) {
-      const ultimo = await sequelize.query(
-        "select max(DETALLE_DIRECCION) as ultimo from bellmart.DETALLE_DIRECCION",
-        { type: QueryTypes.SELECT }
-      );
 
-      const _ultimo = ultimo[0].ultimo + 1;
+    const ultimo = await sequelize.query(
+      "select max(DETALLE_DIRECCION) as ultimo from bellmart.DETALLE_DIRECCION",
+      { type: QueryTypes.SELECT }
+    );
 
-      const dir = {
-        DETALLE_DIRECCION: _ultimo.toString(),
-        DIRECCION: standar,
-        CAMPO_1: direccion,
-        CAMPO_2: pais,
-        CAMPO_3: departamento,
-        CAMPO_4: municipio,
-        CAMPO_5: calle,
-        CAMPO_6: direccion,
-        CAMPO_7: destinatario,
-      };
+    const _ultimo = ultimo[0].ultimo + 1;
 
-      await detalleDireccionModel.create(dir);
-      // insertamos al direciion de envio
-      //1) recorremos el array direccion de envio
+    const dir = {
+      DETALLE_DIRECCION: _ultimo.toString(),
+      DIRECCION: standar,
+      CAMPO_1: direccion,
+      CAMPO_2: pais,
+      CAMPO_3: departamento,
+      CAMPO_4: municipio,
+      CAMPO_5: calle,
+      CAMPO_6: direccion,
+      CAMPO_7: destinatario,
+    };
+
+    await detalleDireccionModel.create(dir);
+    // insertamos al direciion de envio
+    //1) recorremos el array direccion de envio
+    /*
       for (let x = 0; x < direEnvio.length; x++) {
         const element = direEnvio[x];
 
@@ -129,10 +137,12 @@ const postDireccion = async (req, res) => {
         };
         await detalleDireccionModel.create(dir2);
         //Insertamos en la tabla direccion de embarque
-
+        let direccionCore = 2;
+        let direccionCore1 = direccionCore + 1;
+        let direccionCore2 = "0" + direccionCore1;
         const dirEnvio = {
           CLIENTE: cliente.CLIENTE,
-          DIRECCION: "02",
+          DIRECCION: direccionCore2,
           DETALLE_DIRECCION: _ultimo2,
           DESCRIPCION: element.direccion,
         };
@@ -141,13 +151,98 @@ const postDireccion = async (req, res) => {
         const direcc = await direccEmbarqueModel.create(dirEnvio);
         console.log(direcc);
       }
+      */
 
-      await clienteModel.update(
-        { DETALLE_DIRECCION: _ultimo, DIRECCION: direccion },
-        { where: { CLIENTE: cliente.CLIENTE } }
-      );
-    } else {
-      await detalleDireccionModel.update(
+    await clienteModel.update(
+      { DETALLE_DIRECCION: _ultimo, DIRECCION: direccion },
+      { where: { CLIENTE: cliente.CLIENTE } }
+    );
+
+    res.send({ results: "data", result: true, total: 1 });
+  } catch (error) {
+    res.send({ results: "error", result: false, message: error.message });
+  }
+};
+const postDirEnvio = async (req, res) => {
+  try {
+    const pais = req.body.pais;
+    const departamento = req.body.departamento;
+    const municipio = req.body.municipio;
+    const calle = req.body.calle;
+    const direccion = req.body.direccion;
+    const destinatario = req.body.destinatario;
+    const standar = "ESTANDAR";
+    const cliente = req.cliente;
+
+    //SI ES NULL la direccion
+
+    const ultimo = await sequelize.query(
+      "select max(DETALLE_DIRECCION) as ultimo from bellmart.DETALLE_DIRECCION",
+      { type: QueryTypes.SELECT }
+    );
+
+    const _ultimo = ultimo[0].ultimo + 1;
+
+    const dir = {
+      DETALLE_DIRECCION: _ultimo.toString(),
+      DIRECCION: standar,
+      CAMPO_1: direccion,
+      CAMPO_2: pais,
+      CAMPO_3: departamento,
+      CAMPO_4: municipio,
+      CAMPO_5: calle,
+      CAMPO_6: direccion,
+      CAMPO_7: destinatario,
+    };
+
+    await detalleDireccionModel.create(dir);
+    // insertamos al direciion de envio
+    //1) consultamos la ultima direccion  para aumentar uno
+
+    const ultimoDirEmb = await sequelize.query(
+      "select  DIRECCION from bellmart.bellmart.DIRECC_EMBARQUE WHERE DETALLE_DIRECCION in (select max(DETALLE_DIRECCION) from bellmart.bellmart.DIRECC_EMBARQUE where CLIENTE=(:cli) )",
+      { replacements: { cli: cliente.CLIENTE } },
+      { type: QueryTypes.SELECT }
+    );
+
+    const _ultimoDirEmb = parseInt(ultimoDirEmb[0][0].DIRECCION) + 1;
+
+    const _nuwDireEmb = "0" + _ultimoDirEmb.toString();
+
+    console.log("ultimima direccion embarque", _nuwDireEmb);
+
+    console.log("Nuevo direccion", _nuwDireEmb);
+
+    //Insertamos en la tabla direccion de embarque
+
+    const dirEnvio = {
+      CLIENTE: cliente.CLIENTE,
+      DIRECCION: _nuwDireEmb,
+      DETALLE_DIRECCION: _ultimo,
+      DESCRIPCION: direccion,
+    };
+
+    const direcc = await direccEmbarqueModel.create(dirEnvio);
+
+    res.send({ results: dirEnvio, result: true, total: 1 });
+  } catch (error) {
+    res.send({ results: "error", result: false, message: error.message });
+  }
+};
+
+const putDireccion = async (req, res) => {
+  try {
+    const cliente = req.cliente;
+    const detDire = req.query.id;
+    const pais = req.body.pais;
+    const departamento = req.body.departamento;
+    const municipio = req.body.municipio;
+    const calle = req.body.calle;
+    const direccion = req.body.direccion;
+    const destinatario = req.body.destinatario;
+
+    if (detDire) {
+      const _update = await detalleDireccionModel.update(
         {
           CAMPO_1: direccion,
           CAMPO_2: pais,
@@ -158,60 +253,13 @@ const postDireccion = async (req, res) => {
           CAMPO_7: destinatario,
         },
         {
-          where: {
-            DETALLE_DIRECCION: existeDetalleDireccion.DETALLE_DIRECCION,
-          },
+          where: { DETALLE_DIRECCION: detDire },
         }
       );
-
-      // consultamos la tabla de direccion de embarque
-
-      const clienteDirEmbarque = await sequelize.query(
-        "select DETALLE_DIRECCION from bellmart.direcc_embarque where cliente=(:_1)",
-        {
-          replacements: { _1: cliente.CLIENTE },
-        },
-        { type: QueryTypes.SELECT }
-      );
-
-      nuevo = JSON.stringify(clienteDirEmbarque[0][0]);
-      nuevo = JSON.parse(nuevo);
-      const idDireEmbarque = nuevo;
-
-      for (let x = 0; x < direEnvio.length; x++) {
-        const element = direEnvio[x];
-        await detalleDireccionModel.update(
-          {
-            CAMPO_1: element.direccion,
-            CAMPO_2: "ESA",
-            CAMPO_3: element.departamento,
-            CAMPO_4: element.municipio,
-            CAMPO_5: element.calle,
-            CAMPO_6: element.direccion,
-            CAMPO_7: element.destinatario,
-          },
-          {
-            where: {
-              DETALLE_DIRECCION: idDireEmbarque.DETALLE_DIRECCION,
-            },
-          }
-        );
-      }
-      await clienteModel.update(
-        { DIRECCION: direccion },
-        { where: { CLIENTE: cliente.CLIENTE } }
-      );
+      res.send({ results: _update, result: true, total: 1 });
+    } else {
+      res.send({ results: "No existe el Id", result: true, total: 1 });
     }
-    res.send({ results: "data", result: true, total: 1 });
-  } catch (error) {
-    res.send({ results: "error", result: false, message: error.message });
-  }
-};
-const putDireccion = async (req, res) => {
-  try {
-    const cliente = req.cliente;
-    console.log(cliente);
-    res.send({ results: "data", result: true, total: 1 });
   } catch (error) {
     res.send({ results: "error", result: false, message: error });
   }
@@ -220,5 +268,6 @@ const putDireccion = async (req, res) => {
 module.exports = {
   getDireccion,
   postDireccion,
+  postDirEnvio,
   putDireccion,
 };
