@@ -26,9 +26,17 @@ const getDireccion = async (req, res) => {
 
       nuevo3 = JSON.stringify(_direEmbarque[0]);
       nuevo3 = JSON.parse(nuevo3);
+
       let _envio = [];
       for (let x = 0; x < _direEmbarque.length; x++) {
         const element = _direEmbarque[x];
+        const _dirEmbarqueCliente = await sequelize.query(
+          `SELECT  DE.DIRECCION AS DIRE_ENVIO, DT.DETALLE_DIRECCION,DT.DIRECCION, DT.CAMPO_1,DT.CAMPO_2,DT.CAMPO_3,DT.CAMPO_4,DT.CAMPO_5,DT.CAMPO_6,DT.CAMPO_7 FROM bellmart.DETALLE_DIRECCION dt,bellmart.DIRECC_EMBARQUE de where dt.DETALLE_DIRECCION=de.DETALLE_DIRECCION  and dt.DETALLE_DIRECCION=${element.DETALLE_DIRECCION}`,
+          {
+            type: QueryTypes.SELECT,
+          }
+        );
+        /*
         const _dirEmbarqueCliente = await detalleDireccionModel.findAll({
           attributes: [
             "DETALLE_DIRECCION",
@@ -43,11 +51,14 @@ const getDireccion = async (req, res) => {
           ],
           where: { DETALLE_DIRECCION: element.DETALLE_DIRECCION },
         });
+        */
+
         nuevo4 = JSON.stringify(_dirEmbarqueCliente[0]);
         nuevo4 = JSON.parse(nuevo4);
         _envio.push(nuevo4);
       }
       const _IdDetaDire = nuevo.DETALLE_DIRECCION;
+
       const _dirDetalleCliente = await detalleDireccionModel.findAll({
         attributes: [
           "DETALLE_DIRECCION",
@@ -206,12 +217,12 @@ const postDirEnvio = async (req, res) => {
     );
 
     const _ultimoDirEmb = parseInt(ultimoDirEmb[0][0].DIRECCION) + 1;
-
-    const _nuwDireEmb = "0" + _ultimoDirEmb.toString();
-
-    console.log("ultimima direccion embarque", _nuwDireEmb);
-
-    console.log("Nuevo direccion", _nuwDireEmb);
+    let _nuwDireEmb = "";
+    if (_ultimoDirEmb) {
+      _nuwDireEmb = "0" + _ultimoDirEmb.toString();
+    } else {
+      _nuwDireEmb = "01";
+    }
 
     //Insertamos en la tabla direccion de embarque
 

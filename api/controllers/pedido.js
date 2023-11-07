@@ -115,7 +115,7 @@ const getPedido = async (req, res) => {
       FECHA_ULT_CANCELAC: "01-01-1980",
       FECHA_ORDEN: fecha_utc,
       EMBARCAR_A: Cliente.NOMBRE,
-      DIREC_EMBARQUE: "ND",
+      DIREC_EMBARQUE: req.body.direccionEnvio,
       DIRECCION_FACTURA: req.body.direccion,
       OBSERVACIONES: req.body.observaciones,
       TOTAL_MERCADERIA: parseFloat((req.body.total / 1.13).toFixed(2)),
