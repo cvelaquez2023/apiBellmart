@@ -211,7 +211,7 @@ const postDirEnvio = async (req, res) => {
     //1) consultamos la ultima direccion  para aumentar uno
 
     const ultimoDirEmb = await sequelize.query(
-      "select  DIRECCION from bellmart.bellmart.DIRECC_EMBARQUE WHERE DETALLE_DIRECCION in (select max(DETALLE_DIRECCION) from bellmart.bellmart.DIRECC_EMBARQUE where CLIENTE=(:cli) )",
+      "select  DIRECCION from bellmart.DIRECC_EMBARQUE WHERE DETALLE_DIRECCION in (select max(DETALLE_DIRECCION) from bellmart.bellmart.DIRECC_EMBARQUE where CLIENTE=(:cli) )",
       { replacements: { cli: cliente.CLIENTE } },
       { type: QueryTypes.SELECT }
     );
@@ -276,9 +276,24 @@ const putDireccion = async (req, res) => {
   }
 };
 
+const deleteDirEnvio = async (req, res) => {
+  try {
+    const _idDire = req.query.id;
+
+    // borramos la direccion
+    const _deleteDire = await direccEmbarqueModel.destroy({
+      where: { DETALLE_DIRECCION: _idDire },
+    });
+    console.log("Se boora la direccion", _deleteDire);
+    res.send({ results: "Se realizo eliminacion", result: true, total: 1 });
+  } catch (error) {
+    res.send({ results: "error", result: false, message: error.message });
+  }
+};
 module.exports = {
   getDireccion,
   postDireccion,
   postDirEnvio,
   putDireccion,
+  deleteDirEnvio,
 };

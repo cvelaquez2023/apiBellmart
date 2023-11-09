@@ -184,7 +184,7 @@ const registerCtrl = async (req, res) => {
       //no-reply@bellmart.com
       //let emailStatus = "Ok";
       await transporter.sendMail({
-        from: '"Soporte Bellmart S.A.de C.V." <no-reply@bellmart.com>', // sender address
+        from: '"Soporte Bellmart S.A.de C.V." <no-reply@ama-belle.com>', // sender address
         to: req.E_Mail, // list of receivers
         subject: "Activa tu cuenta de Bellmart", // Subject line
         html: `
@@ -240,7 +240,6 @@ const loginCtrl = async (req, res) => {
         "Password",
         "Nivel_Precio",
         "Direccion",
-        "Telefono1",
         "E_Mail",
         "CONFIRN",
         "NOMBRES",
@@ -679,7 +678,9 @@ const generarCodigo = async (req, res) => {
 };
 const validarCode = async (req, res) => {
   const code = req.body.codigo;
+
   const email = req.body.email;
+  console.log("codigo", code);
   //Consultamos el Token del codigo si esta activo aun
   const cliente = await clienteModel.findAll({
     attributes: ["CLIENTE", "E_Mail", "NOMBRE", "CONFIRN", "LOGIN_CODE"],
@@ -719,9 +720,45 @@ const validarCode = async (req, res) => {
     }
 
     //Comparamos
-    if (code == codeToken) {
+
+    if (code === codeToken) {
+      //consultamos el cliente para llenar el token que se el envia
+      const cliente = await clienteModel.findAll({
+        attributes: [
+          "CLIENTE",
+          "NOMBRE",
+          "CONTRIBUYENTE",
+          "RUBRO1_CLI",
+          "RUBRO2_CLI",
+          "Rol",
+          "Password",
+          "Nivel_Precio",
+          "Direccion",
+          "E_Mail",
+          "CONFIRN",
+          "NOMBRES",
+          "APELLIDOS",
+          "RUBRO3_CLI",
+          "RUBRO4_CLI",
+          "RUBRO5_CLI",
+          "RECIBIR_BOLETIN",
+          "TELEFONO1",
+        ],
+        where: {
+          E_Mail: email,
+        },
+      });
+
+      nuevo = JSON.stringify(cliente[0]);
+      nuevo = JSON.parse(nuevo);
+
+      const data = {
+        token: await tokenSign(nuevo),
+        cliente: nuevo,
+      };
+
       return res.send({
-        results: { message: "Codigo es igual" },
+        data,
         result: true,
         error: "",
       });
