@@ -7,7 +7,7 @@ const host = process.env.SQL_HOST;
 const schema = process.env.SQL_SCHEMA;
 
 const sequelize = new Sequelize(database, username, "4-wilhelmine", {
-//  const sequelize = new Sequelize(database, username, "Master#$2021", {
+  //  const sequelize = new Sequelize(database, username, "Master#$2021", {
   host: host,
   dialect: "mssql",
   port: 1433,

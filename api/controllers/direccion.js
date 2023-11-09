@@ -10,9 +10,11 @@ const getDireccion = async (req, res) => {
   try {
     const cliente = req.cliente;
 
+    let _envio = [];
     const _cliente = await clienteModel.findAll({
       attributes: ["CLIENTE", "DETALLE_DIRECCION"],
       where: { CLIENTE: cliente.CLIENTE },
+      raw: true,
     });
     nuevo = JSON.stringify(_cliente[0]);
     nuevo = JSON.parse(nuevo);
@@ -24,39 +26,24 @@ const getDireccion = async (req, res) => {
         where: { CLIENTE: cliente.CLIENTE },
       });
 
-      nuevo3 = JSON.stringify(_direEmbarque[0]);
-      nuevo3 = JSON.parse(nuevo3);
+      if (_direEmbarque.length > 0) {
+        nuevo3 = JSON.stringify(_direEmbarque[0]);
+        nuevo3 = JSON.parse(nuevo3);
+        for (let x = 0; x < _direEmbarque.length; x++) {
+          const element = _direEmbarque[x];
+          const _dirEmbarqueCliente = await sequelize.query(
+            `SELECT  DE.DIRECCION AS DIRE_ENVIO, DT.DETALLE_DIRECCION,DT.DIRECCION, DT.CAMPO_1,DT.CAMPO_2,DT.CAMPO_3,DT.CAMPO_4,DT.CAMPO_5,DT.CAMPO_6,DT.CAMPO_7 FROM bellmart.DETALLE_DIRECCION dt,bellmart.DIRECC_EMBARQUE de where dt.DETALLE_DIRECCION=de.DETALLE_DIRECCION  and dt.DETALLE_DIRECCION=${element.DETALLE_DIRECCION}`,
+            {
+              type: QueryTypes.SELECT,
+            }
+          );
 
-      let _envio = [];
-      for (let x = 0; x < _direEmbarque.length; x++) {
-        const element = _direEmbarque[x];
-        const _dirEmbarqueCliente = await sequelize.query(
-          `SELECT  DE.DIRECCION AS DIRE_ENVIO, DT.DETALLE_DIRECCION,DT.DIRECCION, DT.CAMPO_1,DT.CAMPO_2,DT.CAMPO_3,DT.CAMPO_4,DT.CAMPO_5,DT.CAMPO_6,DT.CAMPO_7 FROM bellmart.DETALLE_DIRECCION dt,bellmart.DIRECC_EMBARQUE de where dt.DETALLE_DIRECCION=de.DETALLE_DIRECCION  and dt.DETALLE_DIRECCION=${element.DETALLE_DIRECCION}`,
-          {
-            type: QueryTypes.SELECT,
-          }
-        );
-        /*
-        const _dirEmbarqueCliente = await detalleDireccionModel.findAll({
-          attributes: [
-            "DETALLE_DIRECCION",
-            "DIRECCION",
-            "CAMPO_1",
-            "CAMPO_2",
-            "CAMPO_3",
-            "CAMPO_4",
-            "CAMPO_5",
-            "CAMPO_6",
-            "CAMPO_7",
-          ],
-          where: { DETALLE_DIRECCION: element.DETALLE_DIRECCION },
-        });
-        */
-
-        nuevo4 = JSON.stringify(_dirEmbarqueCliente[0]);
-        nuevo4 = JSON.parse(nuevo4);
-        _envio.push(nuevo4);
+          nuevo4 = JSON.stringify(_dirEmbarqueCliente[0]);
+          nuevo4 = JSON.parse(nuevo4);
+          _envio.push(nuevo4);
+        }
       }
+
       const _IdDetaDire = nuevo.DETALLE_DIRECCION;
 
       const _dirDetalleCliente = await detalleDireccionModel.findAll({
@@ -211,14 +198,21 @@ const postDirEnvio = async (req, res) => {
     //1) consultamos la ultima direccion  para aumentar uno
 
     const ultimoDirEmb = await sequelize.query(
-      "select  DIRECCION from bellmart.DIRECC_EMBARQUE WHERE DETALLE_DIRECCION in (select max(DETALLE_DIRECCION) from bellmart.bellmart.DIRECC_EMBARQUE where CLIENTE=(:cli) )",
+      "select  DIRECCION from bellmart.DIRECC_EMBARQUE WHERE DETALLE_DIRECCION in (select max(DETALLE_DIRECCION) from bellmart.DIRECC_EMBARQUE where CLIENTE=(:cli) )",
       { replacements: { cli: cliente.CLIENTE } },
       { type: QueryTypes.SELECT }
     );
 
-    const _ultimoDirEmb = parseInt(ultimoDirEmb[0][0].DIRECCION) + 1;
+    let _ultimoDirEmb = "";
+
+    if (ultimoDirEmb[0].length > 0) {
+      _ultimoDirEmb = parseInt(ultimoDirEmb[0][0].DIRECCION) + 1;
+    } else {
+      _ultimoDirEmb = "";
+    }
+
     let _nuwDireEmb = "";
-    if (_ultimoDirEmb) {
+    if (_ultimoDirEmb !== "") {
       _nuwDireEmb = "0" + _ultimoDirEmb.toString();
     } else {
       _nuwDireEmb = "01";
