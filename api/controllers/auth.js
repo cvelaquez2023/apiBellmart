@@ -184,9 +184,1340 @@ const registerCtrl = async (req, res) => {
       //no-reply@bellmart.com
       //let emailStatus = "Ok";
       await transporter.sendMail({
-        from: '"Soporte Bellmart S.A.de C.V." <no-reply@ama-belle.com>', // sender address
+        from: '"Soporte Ama Belle S.A.de C.V." <no-reply@ama-belle.com>', // sender address
         to: req.E_Mail, // list of receivers
-        subject: "Activa tu cuenta de Bellmart", // Subject line
+        subject: "Activa tu cuenta de Ama Belle", // Subject line
+        html: `
+        <html
+  data-editor-version="2"
+  class="sg-campaigns"
+  xmlns="http://www.w3.org/1999/xhtml"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!--<![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          width: 600px;
+          margin: 0 auto;
+        }
+        table {
+          border-collapse: collapse;
+        }
+        table,
+        td {
+          mso-table-lspace: 0pt;
+          mso-table-rspace: 0pt;
+        }
+        img {
+          -ms-interpolation-mode: bicubic;
+        }
+      </style>
+    <![endif]-->
+    <style type="text/css">
+      body,
+      p,
+      div {
+        font-family: inherit;
+        font-size: 14px;
+      }
+      body {
+        color: #000000;
+      }
+      body a {
+        color: #1188e6;
+        text-decoration: none;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      table.wrapper {
+        width: 100% !important;
+        table-layout: fixed;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      img.max-width {
+        max-width: 100% !important;
+      }
+      .column.of-2 {
+        width: 50%;
+      }
+      .column.of-3 {
+        width: 33.333%;
+      }
+      .column.of-4 {
+        width: 25%;
+      }
+      ul ul ul ul {
+        list-style-type: disc !important;
+      }
+      ol ol {
+        list-style-type: lower-roman !important;
+      }
+      ol ol ol {
+        list-style-type: lower-latin !important;
+      }
+      ol ol ol ol {
+        list-style-type: decimal !important;
+      }
+      @media screen and (max-width: 480px) {
+        .preheader .rightColumnContent,
+        .footer .rightColumnContent {
+          text-align: left !important;
+        }
+        .preheader .rightColumnContent div,
+        .preheader .rightColumnContent span,
+        .footer .rightColumnContent div,
+        .footer .rightColumnContent span {
+          text-align: left !important;
+        }
+        .preheader .rightColumnContent,
+        .preheader .leftColumnContent {
+          font-size: 80% !important;
+          padding: 5px 0;
+        }
+        table.wrapper-mobile {
+          width: 100% !important;
+          table-layout: fixed;
+        }
+        img.max-width {
+          height: auto !important;
+          max-width: 100% !important;
+        }
+        a.bulletproof-button {
+          display: block !important;
+          width: auto !important;
+          font-size: 80%;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        .columns {
+          width: 100% !important;
+        }
+        .column {
+          display: block !important;
+          width: 100% !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+        .social-icon-column {
+          display: inline-block !important;
+        }
+      }
+    </style>
+    <!--user entered Head Start-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Muli", sans-serif;
+      }
+    </style>
+    <!--End Head user entered-->
+  </head>
+  <body>
+    <center
+      class="wrapper"
+      data-link-color="#1188E6"
+      data-body-style="font-size:14px; font-family:inherit; color:#000000; background-color:#FFFFFF;"
+    >
+      <div class="webkit">
+        <table
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          width="100%"
+          class="wrapper"
+          bgcolor="#FFFFFF"
+        >
+          <tr>
+            <td valign="top" bgcolor="#FFFFFF" width="100%">
+              <table
+                width="100%"
+                role="content-container"
+                class="outer"
+                align="center"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+              >
+                <tr>
+                  <td width="100%">
+                    <table
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                    >
+                      <tr>
+                        <td>
+                          <!--[if mso]>
+    <center>
+    <table><tr><td width="600">
+  <![endif]-->
+                          <table
+                            width="100%"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="width: 100%; max-width: 600px"
+                            align="center"
+                          >
+                            <tr>
+                              <td
+                                role="modules-container"
+                                style="
+                                  padding: 0px 0px 0px 0px;
+                                  color: #000000;
+                                  text-align: left;
+                                "
+                                bgcolor="#FFFFFF"
+                                width="100%"
+                                align="left"
+                              >
+                                <table
+                                  class="module preheader preheader-hide"
+                                  role="module"
+                                  data-type="preheader"
+                                  border="0"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  width="100%"
+                                  style="
+                                    display: none !important;
+                                    mso-hide: all;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    color: transparent;
+                                    height: 0;
+                                    width: 0;
+                                  "
+                                >
+                                  <tr>
+                                    <td role="module-content">
+                                      <p></p>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table
+                                  border="0"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  align="center"
+                                  width="100%"
+                                  role="module"
+                                  data-type="columns"
+                                  style="padding: 30px 20px 30px 20px"
+                                  bgcolor="#fFFFFFFFFFFFFFFFF"
+                                  data-distribution="1"
+                                >
+                                  <tbody>
+                                    <tr role="module-content">
+                                      <td height="100%" valign="top">
+                                        <table
+                                          width="540"
+                                          style="
+                                            width: 540px;
+                                            border-spacing: 0;
+                                            border-collapse: collapse;
+                                            margin: 0px 10px 0px 10px;
+                                          "
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          align="left"
+                                          border="0"
+                                          bgcolor=""
+                                          class="column column-0"
+                                        >
+                                          <tbody>
+                                            <tr>
+                                              <td
+                                                style="
+                                                  padding: 0px;
+                                                  margin: 0px;
+                                                  border-spacing: 0;
+                                                "
+                                              >
+                                                <table
+                                                  class="wrapper"
+                                                  role="module"
+                                                  data-type="image"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="100%"
+                                                  style="table-layout: fixed"
+                                                  data-muid="d8508015-a2cb-488c-9877-d46adf313282"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        style="
+                                                          font-size: 6px;
+                                                          line-height: 10px;
+                                                          padding: 18px 0px 18px
+                                                            0px;
+                                                        "
+                                                        valign="top"
+                                                        align="center"
+                                                      >
+                                                        <a href="ama-belle.com"
+                                                          ><img
+                                                            class="max-width"
+                                                            border="0"
+                                                            style="
+                                                              display: block;
+                                                              color: #000000;
+                                                              text-decoration: none;
+                                                              font-family: Helvetica,
+                                                                arial,
+                                                                sans-serif;
+                                                              font-size: 16px;
+                                                              max-width: 100% !important;
+                                                              width: 100%;
+                                                              height: auto !important;
+                                                            "
+                                                            width="540"
+                                                            alt=""
+                                                            data-proportionally-constrained="true"
+                                                            data-responsive="true"
+                                                            src="https://bellmart.s3.amazonaws.com/ama-belle-logo-big.png"
+                                                        /></a>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  class="module"
+                                                  role="module"
+                                                  data-type="text"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="100%"
+                                                  style="table-layout: fixed"
+                                                  data-muid="af2e984f-3bd4-4b6a-ab14-c1c1fad4301a"
+                                                  data-mc-module-version="2019-10-22"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        style="
+                                                          padding: 25px 0px 25px
+                                                            0px;
+                                                          line-height: 25px;
+                                                          text-align: inherit;
+                                                          background-color: #FFFFFFFFFFFFFFF;
+                                                        "
+                                                        height="100%"
+                                                        valign="top"
+                                                        bgcolor="#FFFFFFFFFFFFFFF"
+                                                        role="module-content"
+                                                      >
+                                                        <div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: center;
+                                                            "
+                                                          >
+                                                            &nbsp;<span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                              "
+                                                              >¡Bienvenido a
+                                                              AMA</span
+                                                            ><span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-size: 8px;
+                                                              "
+                                                            >
+                                                            </span
+                                                            ><span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                              "
+                                                              >BELLE</span
+                                                            ><span
+                                                              style="
+                                                                box-sizing: border-box;
+                                                                padding-top: 0px;
+                                                                padding-right: 0px;
+                                                                padding-bottom: 0px;
+                                                                padding-left: 0px;
+                                                                margin-top: 0px;
+                                                                margin-right: 0px;
+                                                                margin-bottom: 0px;
+                                                                margin-left: 0px;
+                                                                font-style: inherit;
+                                                                font-variant-ligatures: inherit;
+                                                                font-variant-caps: inherit;
+                                                                font-variant-numeric: inherit;
+                                                                font-variant-east-asian: inherit;
+                                                                font-variant-alternates: inherit;
+                                                                font-variant-position: inherit;
+                                                                font-weight: inherit;
+                                                                font-stretch: inherit;
+                                                                line-height: inherit;
+                                                                font-family: inherit;
+                                                                font-optical-sizing: inherit;
+                                                                font-kerning: inherit;
+                                                                font-feature-settings: inherit;
+                                                                font-variation-settings: inherit;
+                                                                font-size: 14px;
+                                                                vertical-align: baseline;
+                                                                border-top-width: 0px;
+                                                                border-right-width: 0px;
+                                                                border-bottom-width: 0px;
+                                                                border-left-width: 0px;
+                                                                border-top-style: initial;
+                                                                border-right-style: initial;
+                                                                border-bottom-style: initial;
+                                                                border-left-style: initial;
+                                                                border-top-color: initial;
+                                                                border-right-color: initial;
+                                                                border-bottom-color: initial;
+                                                                border-left-color: initial;
+                                                                border-image-source: initial;
+                                                                border-image-slice: initial;
+                                                                border-image-width: initial;
+                                                                border-image-outset: initial;
+                                                                border-image-repeat: initial;
+                                                                color: #000000;
+                                                                letter-spacing: normal;
+                                                                orphans: 2;
+                                                                text-align: center;
+                                                                text-indent: 0px;
+                                                                text-transform: none;
+                                                                widows: 2;
+                                                                word-spacing: 0px;
+                                                                -webkit-text-stroke-width: 0px;
+                                                                white-space-collapse: preserve;
+                                                                text-wrap: wrap;
+                                                                background-color: rgb(
+                                                                  246,
+                                                                  246,
+                                                                  246
+                                                                );
+                                                                text-decoration-thickness: initial;
+                                                                text-decoration-style: initial;
+                                                                text-decoration-color: initial;
+                                                                overflow-wrap: break-word;
+                                                              "
+                                                              >!</span
+                                                            >
+                                                            &nbsp;<span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                              "
+                                                              >&nbsp;</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: center;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                              "
+                                                              ><strong
+                                                                >“Where Beauty
+                                                                meets
+                                                                technology”</strong
+                                                              ></span
+                                                            ><strong>
+                                                              &nbsp;</strong
+                                                            >
+                                                          </div>
+                                                          <div></div>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  class="module"
+                                                  role="module"
+                                                  data-type="text"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="100%"
+                                                  style="table-layout: fixed"
+                                                  data-muid="8ea463eb-9361-4dda-8f06-3f95dd696b57"
+                                                  data-mc-module-version="2019-10-22"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        style="
+                                                          padding: 25px 20px
+                                                            25px 20px;
+                                                          line-height: 25px;
+                                                          text-align: inherit;
+                                                          background-color: #f6f6f6;
+                                                        "
+                                                        height="100%"
+                                                        valign="top"
+                                                        bgcolor="#F6F6F6"
+                                                        role="module-content"
+                                                      >
+                                                        <div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                              "
+                                                              >Para finalizar tu
+                                                              proceso de
+                                                              registro, te
+                                                              pedimos que
+                                                              confirmes tu
+                                                              dirección de
+                                                              correo electrónico
+                                                              haciendo clic en
+                                                              el siguiente
+                                                              enlace:</span
+                                                            >
+                                                            &nbsp;
+                                                          </div>
+                                                          <div></div>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  class="module"
+                                                  data-role="module-button"
+                                                  data-type="button"
+                                                  role="module"
+                                                  style="table-layout: fixed"
+                                                  width="100%"
+                                                  data-muid="3c6b1ba6-7302-4e7f-a38f-337e93aa6fdf"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        align="center"
+                                                        bgcolor="#F6F6F6"
+                                                        class="outer-td"
+                                                        style="
+                                                          padding: 0px 0px 0px
+                                                            0px;
+                                                          background-color: #f6f6f6;
+                                                        "
+                                                      >
+                                                        <table
+                                                          border="0"
+                                                          cellpadding="0"
+                                                          cellspacing="0"
+                                                          class="wrapper-mobile"
+                                                          style="
+                                                            text-align: center;
+                                                          "
+                                                        >
+                                                          <tbody>
+                                                            <tr>
+                                                              <td
+                                                                align="center"
+                                                                bgcolor="#FE8C4E"
+                                                                class="inner-td"
+                                                                style="
+                                                                  border-radius: 6px;
+                                                                  font-size: 16px;
+                                                                  text-align: center;
+                                                                  background-color: inherit;
+                                                                "
+                                                              >
+                                                                <a
+                                                                  href="${verificactionLink}"
+                                                                  style="
+                                                                    background-color: #fe8c4e;
+                                                                    border: 2px
+                                                                      solid
+                                                                      #fe8c4e;
+                                                                    border-color: #fe8c4e;
+                                                                    border-radius: 10px;
+                                                                    border-width: 2px;
+                                                                    color: #fefdfd;
+                                                                    display: inline-block;
+                                                                    font-size: 16px;
+                                                                    font-weight: normal;
+                                                                    letter-spacing: 0px;
+                                                                    line-height: normal;
+                                                                    padding: 12px
+                                                                      18px 12px
+                                                                      18px;
+                                                                    text-align: center;
+                                                                    text-decoration: none;
+                                                                    border-style: solid;
+                                                                  "
+                                                                  target="_blank"
+                                                                  >Verify Email
+                                                                  Now</a
+                                                                >
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  class="module"
+                                                  role="module"
+                                                  data-type="text"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="100%"
+                                                  style="table-layout: fixed"
+                                                  data-muid="8ea463eb-9361-4dda-8f06-3f95dd696b57.1"
+                                                  data-mc-module-version="2019-10-22"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        style="
+                                                          padding: 25px 20px
+                                                            25px 20px;
+                                                          line-height: 17px;
+                                                          text-align: inherit;
+                                                          background-color: #f6f6f6;
+                                                        "
+                                                        height="100%"
+                                                        valign="top"
+                                                        bgcolor="#F6F6F6"
+                                                        role="module-content"
+                                                      >
+                                                        <div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                line-height: 107%;
+                                                                font-family: inherit;
+                                                                font-size: 14px;
+                                                              "
+                                                              >Recuerda que este
+                                                              enlace </span
+                                                            ><span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                line-height: 107%;
+                                                                color: #fa940a;
+                                                                font-family: inherit;
+                                                                font-size: 14px;
+                                                              "
+                                                              ><strong
+                                                                >caducará en 24
+                                                                horas</strong
+                                                              ></span
+                                                            ><span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                line-height: 107%;
+                                                                font-family: inherit;
+                                                                font-size: 14px;
+                                                              "
+                                                              >, así que no
+                                                              demores en
+                                                              confirmar tu
+                                                              Email.</span
+                                                            ><span
+                                                              style="
+                                                                font-family: inherit;
+                                                                font-size: 14px;
+                                                              "
+                                                            >
+                                                              &nbsp;</span
+                                                            >
+                                                          </div>
+                                                          <div></div>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  class="module"
+                                                  role="module"
+                                                  data-type="text"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="100%"
+                                                  style="table-layout: fixed"
+                                                  data-muid="a265ebb9-ab9c-43e8-9009-54d6151b1600"
+                                                  data-mc-module-version="2019-10-22"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        style="
+                                                          padding: 30px 20px
+                                                            20px 20px;
+                                                          line-height: 19px;
+                                                          text-align: inherit;
+                                                          background-color: #FFFFFFFFFFFFFFFFFFF;
+                                                        "
+                                                        height="100%"
+                                                        valign="top"
+                                                        bgcolor="#FFFFFFFFFFFFFFFFFFF"
+                                                        role="module-content"
+                                                      >
+                                                        <div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: center;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                                font-size: 18px;
+                                                              "
+                                                              ><strong
+                                                                >¡Agradecemos
+                                                                &nbsp;tu&nbsp;</strong
+                                                              ></span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: center;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                                font-size: 18px;
+                                                              "
+                                                              ><strong
+                                                                >confianza en
+                                                                nosotros!</strong
+                                                              ></span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-size: 14px;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                              "
+                                                              >Gracias por ser
+                                                              parte de la
+                                                              transformación
+                                                              digital más grande
+                                                              de productos de
+                                                              belleza y cuidado
+                                                              personal en El
+                                                              Salvador.</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-size: 14px;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                              "
+                                                              >Esperamos que
+                                                              disfrutes de una
+                                                              experiencia de
+                                                              compra excepcional
+                                                              y que encuentres
+                                                              los productos de
+                                                              belleza que estás
+                                                              buscando.&nbsp;</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                line-height: 107%;
+                                                                font-size: 14px;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                              "
+                                                              >Si tienes alguna
+                                                              pregunta o
+                                                              necesitas ayuda,
+                                                              no dudes en
+                                                              ponerte en
+                                                              contacto con
+                                                              nuestro equipo de
+                                                              soporte.&nbsp;</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: left;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                font-size: 14px;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                              "
+                                                              >¡</span
+                                                            ><span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                                font-size: 14px;
+                                                              "
+                                                              >Estamos aquí para
+                                                              lo que
+                                                              necesites!</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: left;
+                                                            "
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: left;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                box-sizing: border-box;
+                                                                padding-top: 0px;
+                                                                padding-right: 0px;
+                                                                padding-bottom: 0px;
+                                                                padding-left: 0px;
+                                                                margin-top: 0px;
+                                                                margin-right: 0px;
+                                                                margin-bottom: 0px;
+                                                                margin-left: 0px;
+                                                                font-style: inherit;
+                                                                font-variant-ligatures: inherit;
+                                                                font-variant-caps: inherit;
+                                                                font-variant-numeric: inherit;
+                                                                font-variant-east-asian: inherit;
+                                                                font-variant-alternates: inherit;
+                                                                font-variant-position: inherit;
+                                                                font-weight: inherit;
+                                                                font-stretch: inherit;
+                                                                line-height: inherit;
+                                                                font-family: inherit;
+                                                                font-optical-sizing: inherit;
+                                                                font-kerning: inherit;
+                                                                font-feature-settings: inherit;
+                                                                font-variation-settings: inherit;
+                                                                font-size: 14px;
+                                                                vertical-align: baseline;
+                                                                border-top-width: 0px;
+                                                                border-right-width: 0px;
+                                                                border-bottom-width: 0px;
+                                                                border-left-width: 0px;
+                                                                border-top-style: initial;
+                                                                border-right-style: initial;
+                                                                border-bottom-style: initial;
+                                                                border-left-style: initial;
+                                                                border-top-color: initial;
+                                                                border-right-color: initial;
+                                                                border-bottom-color: initial;
+                                                                border-left-color: initial;
+                                                                border-image-source: initial;
+                                                                border-image-slice: initial;
+                                                                border-image-width: initial;
+                                                                border-image-outset: initial;
+                                                                border-image-repeat: initial;
+                                                                text-align: left;
+                                                                color: #000000;
+                                                                letter-spacing: normal;
+                                                                orphans: 2;
+                                                                text-indent: 0px;
+                                                                text-transform: none;
+                                                                widows: 2;
+                                                                word-spacing: 0px;
+                                                                -webkit-text-stroke-width: 0px;
+                                                                white-space-collapse: preserve;
+                                                                text-wrap: wrap;
+                                                                background-color: rgb(
+                                                                  255,
+                                                                  255,
+                                                                  255
+                                                                );
+                                                                text-decoration-thickness: initial;
+                                                                text-decoration-style: initial;
+                                                                text-decoration-color: initial;
+                                                              "
+                                                              >Saludos
+                                                              cordiales,&nbsp;</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: left;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                box-sizing: border-box;
+                                                                padding-top: 0px;
+                                                                padding-right: 0px;
+                                                                padding-bottom: 0px;
+                                                                padding-left: 0px;
+                                                                margin-top: 0px;
+                                                                margin-right: 0px;
+                                                                margin-bottom: 0px;
+                                                                margin-left: 0px;
+                                                                font-style: inherit;
+                                                                font-variant-ligatures: inherit;
+                                                                font-variant-caps: inherit;
+                                                                font-variant-numeric: inherit;
+                                                                font-variant-east-asian: inherit;
+                                                                font-variant-alternates: inherit;
+                                                                font-variant-position: inherit;
+                                                                font-weight: inherit;
+                                                                font-stretch: inherit;
+                                                                line-height: inherit;
+                                                                font-family: inherit;
+                                                                font-optical-sizing: inherit;
+                                                                font-kerning: inherit;
+                                                                font-feature-settings: inherit;
+                                                                font-variation-settings: inherit;
+                                                                font-size: 14px;
+                                                                vertical-align: baseline;
+                                                                border-top-width: 0px;
+                                                                border-right-width: 0px;
+                                                                border-bottom-width: 0px;
+                                                                border-left-width: 0px;
+                                                                border-top-style: initial;
+                                                                border-right-style: initial;
+                                                                border-bottom-style: initial;
+                                                                border-left-style: initial;
+                                                                border-top-color: initial;
+                                                                border-right-color: initial;
+                                                                border-bottom-color: initial;
+                                                                border-left-color: initial;
+                                                                border-image-source: initial;
+                                                                border-image-slice: initial;
+                                                                border-image-width: initial;
+                                                                border-image-outset: initial;
+                                                                border-image-repeat: initial;
+                                                                text-align: left;
+                                                                color: #000000;
+                                                                letter-spacing: normal;
+                                                                orphans: 2;
+                                                                text-indent: 0px;
+                                                                text-transform: none;
+                                                                widows: 2;
+                                                                word-spacing: 0px;
+                                                                -webkit-text-stroke-width: 0px;
+                                                                white-space-collapse: preserve;
+                                                                text-wrap: wrap;
+                                                                background-color: rgb(
+                                                                  255,
+                                                                  255,
+                                                                  255
+                                                                );
+                                                                text-decoration-thickness: initial;
+                                                                text-decoration-style: initial;
+                                                                text-decoration-color: initial;
+                                                              "
+                                                              >Tu equipo</span
+                                                            >&nbsp;
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: left;
+                                                            "
+                                                          >
+                                                            <a
+                                                              href=""
+                                                              title='&lt;span data-offset-key="ditug-0-0" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt;&lt;span data-text="true" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt;AMA&lt;/span&gt;&lt;/span&gt;&lt;span data-offset-key="ditug-0-1" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt;&lt;span data-text="true" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span data-offset-key="ditug-0-2" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt;&lt;span data-text="true" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt;BELLE&lt;/span&gt;&lt;/span&gt;'
+                                                              ><span
+                                                                style="
+                                                                  box-sizing: border-box;
+                                                                  padding-top: 0px;
+                                                                  padding-right: 0px;
+                                                                  padding-bottom: 0px;
+                                                                  padding-left: 0px;
+                                                                  margin-top: 0px;
+                                                                  margin-right: 0px;
+                                                                  margin-bottom: 0px;
+                                                                  margin-left: 0px;
+                                                                  font-style: inherit;
+                                                                  font-variant-ligatures: inherit;
+                                                                  font-variant-caps: inherit;
+                                                                  font-variant-numeric: inherit;
+                                                                  font-variant-east-asian: inherit;
+                                                                  font-variant-alternates: inherit;
+                                                                  font-variant-position: inherit;
+                                                                  font-weight: bold;
+                                                                  font-stretch: inherit;
+                                                                  line-height: inherit;
+                                                                  font-family: inherit;
+                                                                  font-optical-sizing: inherit;
+                                                                  font-kerning: inherit;
+                                                                  font-feature-settings: inherit;
+                                                                  font-variation-settings: inherit;
+                                                                  font-size: 14px;
+                                                                  vertical-align: baseline;
+                                                                  border-top-width: 0px;
+                                                                  border-right-width: 0px;
+                                                                  border-bottom-width: 0px;
+                                                                  border-left-width: 0px;
+                                                                  border-top-style: initial;
+                                                                  border-right-style: initial;
+                                                                  border-bottom-style: initial;
+                                                                  border-left-style: initial;
+                                                                  border-top-color: initial;
+                                                                  border-right-color: initial;
+                                                                  border-bottom-color: initial;
+                                                                  border-left-color: initial;
+                                                                  border-image-source: initial;
+                                                                  border-image-slice: initial;
+                                                                  border-image-width: initial;
+                                                                  border-image-outset: initial;
+                                                                  border-image-repeat: initial;
+                                                                  text-align: left;
+                                                                  color: #1188e6;
+                                                                  letter-spacing: normal;
+                                                                  orphans: 2;
+                                                                  text-indent: 0px;
+                                                                  text-transform: none;
+                                                                  widows: 2;
+                                                                  word-spacing: 0px;
+                                                                  -webkit-text-stroke-width: 0px;
+                                                                  white-space-collapse: preserve;
+                                                                  text-wrap: wrap;
+                                                                  background-color: rgb(
+                                                                    255,
+                                                                    255,
+                                                                    255
+                                                                  );
+                                                                  text-decoration-thickness: initial;
+                                                                  text-decoration-style: initial;
+                                                                  text-decoration-color: initial;
+                                                                  outline-color: initial;
+                                                                  outline-style: none;
+                                                                  outline-width: initial;
+                                                                  text-decoration-line: none;
+                                                                  transition-behavior: normal;
+                                                                  transition-duration: 0.3s;
+                                                                  transition-timing-function: ease;
+                                                                  transition-delay: 0s;
+                                                                  transition-property: color;
+                                                                "
+                                                                >AMA</span
+                                                              ><span
+                                                                style="
+                                                                  font-size: 8px;
+                                                                "
+                                                              >
+                                                              </span
+                                                              ><span
+                                                                style="
+                                                                  box-sizing: border-box;
+                                                                  padding-top: 0px;
+                                                                  padding-right: 0px;
+                                                                  padding-bottom: 0px;
+                                                                  padding-left: 0px;
+                                                                  margin-top: 0px;
+                                                                  margin-right: 0px;
+                                                                  margin-bottom: 0px;
+                                                                  margin-left: 0px;
+                                                                  font-style: inherit;
+                                                                  font-variant-ligatures: inherit;
+                                                                  font-variant-caps: inherit;
+                                                                  font-variant-numeric: inherit;
+                                                                  font-variant-east-asian: inherit;
+                                                                  font-variant-alternates: inherit;
+                                                                  font-variant-position: inherit;
+                                                                  font-weight: bold;
+                                                                  font-stretch: inherit;
+                                                                  line-height: inherit;
+                                                                  font-family: inherit;
+                                                                  font-optical-sizing: inherit;
+                                                                  font-kerning: inherit;
+                                                                  font-feature-settings: inherit;
+                                                                  font-variation-settings: inherit;
+                                                                  font-size: 14px;
+                                                                  vertical-align: baseline;
+                                                                  border-top-width: 0px;
+                                                                  border-right-width: 0px;
+                                                                  border-bottom-width: 0px;
+                                                                  border-left-width: 0px;
+                                                                  border-top-style: initial;
+                                                                  border-right-style: initial;
+                                                                  border-bottom-style: initial;
+                                                                  border-left-style: initial;
+                                                                  border-top-color: initial;
+                                                                  border-right-color: initial;
+                                                                  border-bottom-color: initial;
+                                                                  border-left-color: initial;
+                                                                  border-image-source: initial;
+                                                                  border-image-slice: initial;
+                                                                  border-image-width: initial;
+                                                                  border-image-outset: initial;
+                                                                  border-image-repeat: initial;
+                                                                  text-align: left;
+                                                                  color: #1188e6;
+                                                                  letter-spacing: normal;
+                                                                  orphans: 2;
+                                                                  text-indent: 0px;
+                                                                  text-transform: none;
+                                                                  widows: 2;
+                                                                  word-spacing: 0px;
+                                                                  -webkit-text-stroke-width: 0px;
+                                                                  white-space-collapse: preserve;
+                                                                  text-wrap: wrap;
+                                                                  background-color: rgb(
+                                                                    255,
+                                                                    255,
+                                                                    255
+                                                                  );
+                                                                  text-decoration-thickness: initial;
+                                                                  text-decoration-style: initial;
+                                                                  text-decoration-color: initial;
+                                                                  outline-color: initial;
+                                                                  outline-style: none;
+                                                                  outline-width: initial;
+                                                                  text-decoration-line: none;
+                                                                  transition-behavior: normal;
+                                                                  transition-duration: 0.3s;
+                                                                  transition-timing-function: ease;
+                                                                  transition-delay: 0s;
+                                                                  transition-property: color;
+                                                                "
+                                                                >BELLE</span
+                                                              ></a
+                                                            >&nbsp;
+                                                          </div>
+                                                          <div></div>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  class="module"
+                                                  data-role="module-button"
+                                                  data-type="button"
+                                                  role="module"
+                                                  style="table-layout: fixed"
+                                                  width="100%"
+                                                  data-muid="3c6b1ba6-7302-4e7f-a38f-337e93aa6fdf.1"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        align="center"
+                                                        bgcolor=" #FFFFFFFFFFFFFFFFFFF"
+                                                        class="outer-td"
+                                                        style="
+                                                          padding: 5px 30px 5px
+                                                            30px;
+                                                          background-color: #FFFFFFFFFFFFFFFFFFF;
+                                                        "
+                                                      >
+                                                        <table
+                                                          border="0"
+                                                          cellpadding="0"
+                                                          cellspacing="0"
+                                                          class="wrapper-mobile"
+                                                          style="
+                                                            text-align: center;
+                                                          "
+                                                        >
+                                                          <tbody>
+                                                            <tr>
+                                                              <td
+                                                                align="center"
+                                                                bgcolor="#0c0c0c"
+                                                                class="inner-td"
+                                                                style="
+                                                                  border-radius: 6px;
+                                                                  font-size: 16px;
+                                                                  text-align: center;
+                                                                  background-color: inherit;
+                                                                "
+                                                              >
+                                                                <a
+                                                                  href="https://api.whatsapp.com/send?phone=50370438848&text=%C2%A1Hola!%20Tengo%20una%20consulta"
+                                                                  style="
+                                                                    background-color: #0c0c0c;
+                                                                    border: 2px
+                                                                      solid
+                                                                      #0c0c0c;
+                                                                    border-color: #0c0c0c;
+                                                                    border-radius: 4px;
+                                                                    border-width: 2px;
+                                                                    color: #fefdfd;
+                                                                    display: inline-block;
+                                                                    font-size: 12px;
+                                                                    font-weight: normal;
+                                                                    letter-spacing: 0px;
+                                                                    line-height: normal;
+                                                                    padding: 5px
+                                                                      10px 5px
+                                                                      10px;
+                                                                    text-align: center;
+                                                                    text-decoration: none;
+                                                                    border-style: solid;
+                                                                  "
+                                                                  target="_blank"
+                                                                  >Contact
+                                                                  Support</a
+                                                                >
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                          <!--[if mso]>
+                                  </td>
+                                </tr>
+                              </table>
+                            </center>
+                            <![endif]-->
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </center>
+  </body>
+</html> `,
+
+      /*
         html: `
          Hola,
          <br>
@@ -205,6 +1536,7 @@ const registerCtrl = async (req, res) => {
         <br>
         <span>Bellmart</span> Soporte
         `, // html body
+        */
       });
 
       res.send({
@@ -421,10 +1753,1327 @@ const forgotPassword = async (req, res) => {
       from: '"Soporte Bellmart S.A.de C.V." <no-reply@ama-belle.com>', // sender address
       to: email, // list of receivers
       subject: "Recuperacion de Contraseña", // Subject line
+      html:`
+      <html
+  data-editor-version="2"
+  class="sg-campaigns"
+  xmlns="http://www.w3.org/1999/xhtml"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!--<![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          width: 600px;
+          margin: 0 auto;
+        }
+        table {
+          border-collapse: collapse;
+        }
+        table,
+        td {
+          mso-table-lspace: 0pt;
+          mso-table-rspace: 0pt;
+        }
+        img {
+          -ms-interpolation-mode: bicubic;
+        }
+      </style>
+    <![endif]-->
+    <style type="text/css">
+      body,
+      p,
+      div {
+        font-family: inherit;
+        font-size: 14px;
+      }
+      body {
+        color: #000000;
+      }
+      body a {
+        color: #1188e6;
+        text-decoration: none;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      table.wrapper {
+        width: 100% !important;
+        table-layout: fixed;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      img.max-width {
+        max-width: 100% !important;
+      }
+      .column.of-2 {
+        width: 50%;
+      }
+      .column.of-3 {
+        width: 33.333%;
+      }
+      .column.of-4 {
+        width: 25%;
+      }
+      ul ul ul ul {
+        list-style-type: disc !important;
+      }
+      ol ol {
+        list-style-type: lower-roman !important;
+      }
+      ol ol ol {
+        list-style-type: lower-latin !important;
+      }
+      ol ol ol ol {
+        list-style-type: decimal !important;
+      }
+      @media screen and (max-width: 480px) {
+        .preheader .rightColumnContent,
+        .footer .rightColumnContent {
+          text-align: left !important;
+        }
+        .preheader .rightColumnContent div,
+        .preheader .rightColumnContent span,
+        .footer .rightColumnContent div,
+        .footer .rightColumnContent span {
+          text-align: left !important;
+        }
+        .preheader .rightColumnContent,
+        .preheader .leftColumnContent {
+          font-size: 80% !important;
+          padding: 5px 0;
+        }
+        table.wrapper-mobile {
+          width: 100% !important;
+          table-layout: fixed;
+        }
+        img.max-width {
+          height: auto !important;
+          max-width: 100% !important;
+        }
+        a.bulletproof-button {
+          display: block !important;
+          width: auto !important;
+          font-size: 80%;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        .columns {
+          width: 100% !important;
+        }
+        .column {
+          display: block !important;
+          width: 100% !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+        .social-icon-column {
+          display: inline-block !important;
+        }
+      }
+    </style>
+    <!--user entered Head Start-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Muli", sans-serif;
+      }
+    </style>
+    <!--End Head user entered-->
+  </head>
+  <body>
+    <center
+      class="wrapper"
+      data-link-color="#1188E6"
+      data-body-style="font-size:14px; font-family:inherit; color:#000000; background-color:#FFFFFF;"
+    >
+      <div class="webkit">
+        <table
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          width="100%"
+          class="wrapper"
+          bgcolor="#FFFFFF"
+        >
+          <tr>
+            <td valign="top" bgcolor="#FFFFFF" width="100%">
+              <table
+                width="100%"
+                role="content-container"
+                class="outer"
+                align="center"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+              >
+                <tr>
+                  <td width="100%">
+                    <table
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                    >
+                      <tr>
+                        <td>
+                          <!--[if mso]>
+    <center>
+    <table><tr><td width="600">
+  <![endif]-->
+                          <table
+                            width="100%"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="width: 100%; max-width: 600px"
+                            align="center"
+                          >
+                            <tr>
+                              <td
+                                role="modules-container"
+                                style="
+                                  padding: 0px 0px 0px 0px;
+                                  color: #000000;
+                                  text-align: left;
+                                "
+                                bgcolor="#FFFFFF"
+                                width="100%"
+                                align="left"
+                              >
+                                <table
+                                  class="module preheader preheader-hide"
+                                  role="module"
+                                  data-type="preheader"
+                                  border="0"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  width="100%"
+                                  style="
+                                    display: none !important;
+                                    mso-hide: all;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    color: transparent;
+                                    height: 0;
+                                    width: 0;
+                                  "
+                                >
+                                  <tr>
+                                    <td role="module-content">
+                                      <p></p>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table
+                                  border="0"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  align="center"
+                                  width="100%"
+                                  role="module"
+                                  data-type="columns"
+                                  style="padding: 30px 20px 30px 20px"
+                                  bgcolor="#fFFFFFFFFFFFFFFFF"
+                                  data-distribution="1"
+                                >
+                                  <tbody>
+                                    <tr role="module-content">
+                                      <td height="100%" valign="top">
+                                        <table
+                                          width="540"
+                                          style="
+                                            width: 540px;
+                                            border-spacing: 0;
+                                            border-collapse: collapse;
+                                            margin: 0px 10px 0px 10px;
+                                          "
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          align="left"
+                                          border="0"
+                                          bgcolor=""
+                                          class="column column-0"
+                                        >
+                                          <tbody>
+                                            <tr>
+                                              <td
+                                                style="
+                                                  padding: 0px;
+                                                  margin: 0px;
+                                                  border-spacing: 0;
+                                                "
+                                              >
+                                                <table
+                                                  class="wrapper"
+                                                  role="module"
+                                                  data-type="image"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="100%"
+                                                  style="table-layout: fixed"
+                                                  data-muid="d8508015-a2cb-488c-9877-d46adf313282"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        style="
+                                                          font-size: 6px;
+                                                          line-height: 10px;
+                                                          padding: 18px 0px 18px
+                                                            0px;
+                                                        "
+                                                        valign="top"
+                                                        align="center"
+                                                      >
+                                                        <a href="ama-belle.com"
+                                                          ><img
+                                                            class="max-width"
+                                                            border="0"
+                                                            style="
+                                                              display: block;
+                                                              color: #000000;
+                                                              text-decoration: none;
+                                                              font-family: Helvetica,
+                                                                arial,
+                                                                sans-serif;
+                                                              font-size: 16px;
+                                                              max-width: 100% !important;
+                                                              width: 100%;
+                                                              height: auto !important;
+                                                            "
+                                                            width="540"
+                                                            alt=""
+                                                            data-proportionally-constrained="true"
+                                                            data-responsive="true"
+                                                            src="https://bellmart.s3.amazonaws.com/ama-belle-logo-big.png"
+                                                        /></a>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  class="module"
+                                                  role="module"
+                                                  data-type="text"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="100%"
+                                                  style="table-layout: fixed"
+                                                  data-muid="af2e984f-3bd4-4b6a-ab14-c1c1fad4301a"
+                                                  data-mc-module-version="2019-10-22"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        style="
+                                                          padding: 25px 0px 25px
+                                                            0px;
+                                                          line-height: 25px;
+                                                          text-align: inherit;
+                                                          background-color: #FFFFFFFFFFFFFFF;
+                                                        "
+                                                        height="100%"
+                                                        valign="top"
+                                                        bgcolor="#FFFFFFFFFFFFFFF"
+                                                        role="module-content"
+                                                      >
+                                                        <div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: center;
+                                                            "
+                                                          >
+                                                            &nbsp;<span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-size: 14px;
+                                                              "
+                                                              >¡Te saluda AMA</span
+                                                            ><span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-size: 8px;
+                                                              "
+                                                            >
+                                                            </span
+                                                            ><span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-size: 14px;
+                                                              "
+                                                              >BELLE</span
+                                                            ><span
+                                                              style="
+                                                                box-sizing: border-box;
+                                                                padding-top: 0px;
+                                                                padding-right: 0px;
+                                                                padding-bottom: 0px;
+                                                                padding-left: 0px;
+                                                                margin-top: 0px;
+                                                                margin-right: 0px;
+                                                                margin-bottom: 0px;
+                                                                margin-left: 0px;
+                                                                font-style: inherit;
+                                                                font-variant-ligatures: inherit;
+                                                                font-variant-caps: inherit;
+                                                                font-variant-numeric: inherit;
+                                                                font-variant-east-asian: inherit;
+                                                                font-variant-alternates: inherit;
+                                                                font-variant-position: inherit;
+                                                                font-weight: inherit;
+                                                                font-stretch: inherit;
+                                                                line-height: inherit;
+                                                                font-family: inherit;
+                                                                font-optical-sizing: inherit;
+                                                                font-kerning: inherit;
+                                                                font-feature-settings: inherit;
+                                                                font-variation-settings: inherit;
+                                                                font-size: 14px;
+                                                                vertical-align: baseline;
+                                                                border-top-width: 0px;
+                                                                border-right-width: 0px;
+                                                                border-bottom-width: 0px;
+                                                                border-left-width: 0px;
+                                                                border-top-style: initial;
+                                                                border-right-style: initial;
+                                                                border-bottom-style: initial;
+                                                                border-left-style: initial;
+                                                                border-top-color: initial;
+                                                                border-right-color: initial;
+                                                                border-bottom-color: initial;
+                                                                border-left-color: initial;
+                                                                border-image-source: initial;
+                                                                border-image-slice: initial;
+                                                                border-image-width: initial;
+                                                                border-image-outset: initial;
+                                                                border-image-repeat: initial;
+                                                                color: #000000;
+                                                                letter-spacing: normal;
+                                                                orphans: 2;
+                                                                text-align: center;
+                                                                text-indent: 0px;
+                                                                text-transform: none;
+                                                                widows: 2;
+                                                                word-spacing: 0px;
+                                                                -webkit-text-stroke-width: 0px;
+                                                                white-space-collapse: preserve;
+                                                                text-wrap: wrap;
+                                                                background-color: rgb(
+                                                                  246,
+                                                                  246,
+                                                                  246
+                                                                );
+                                                                text-decoration-thickness: initial;
+                                                                text-decoration-style: initial;
+                                                                text-decoration-color: initial;
+                                                                overflow-wrap: break-word;
+                                                              "
+                                                              >!</span
+                                                            >
+                                                            &nbsp;<span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                              "
+                                                              >&nbsp;</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: center;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                              "
+                                                              ><strong
+                                                                >“Where Beauty
+                                                                meets
+                                                                technology”</strong
+                                                              ></span
+                                                            ><strong>
+                                                              &nbsp;</strong
+                                                            >
+                                                          </div>
+                                                          <div></div>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  class="module"
+                                                  role="module"
+                                                  data-type="text"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="100%"
+                                                  style="table-layout: fixed"
+                                                  data-muid="8ea463eb-9361-4dda-8f06-3f95dd696b57"
+                                                  data-mc-module-version="2019-10-22"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        style="
+                                                          padding: 25px 20px
+                                                            25px 20px;
+                                                          line-height: 25px;
+                                                          text-align: inherit;
+                                                          background-color: #f6f6f6;
+                                                        "
+                                                        height="100%"
+                                                        valign="top"
+                                                        bgcolor="#F6F6F6"
+                                                        role="module-content"
+                                                      >
+                                                        <div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                              "
+                                                              >No te preocupes puedes recuperar tu contraseña siguiendo las instrucciones haciendo clic en el siguiente enlace:</span
+                                                            >
+                                                            &nbsp;
+                                                          </div>
+                                                          <div></div>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  class="module"
+                                                  data-role="module-button"
+                                                  data-type="button"
+                                                  role="module"
+                                                  style="table-layout: fixed"
+                                                  width="100%"
+                                                  data-muid="3c6b1ba6-7302-4e7f-a38f-337e93aa6fdf"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        align="center"
+                                                        bgcolor="#F6F6F6"
+                                                        class="outer-td"
+                                                        style="
+                                                          padding: 0px 0px 0px
+                                                            0px;
+                                                          background-color: #f6f6f6;
+                                                        "
+                                                      >
+                                                        <table
+                                                          border="0"
+                                                          cellpadding="0"
+                                                          cellspacing="0"
+                                                          class="wrapper-mobile"
+                                                          style="
+                                                            text-align: center;
+                                                          "
+                                                        >
+                                                          <tbody>
+                                                            <tr>
+                                                              <td
+                                                                align="center"
+                                                                bgcolor="#FE8C4E"
+                                                                class="inner-td"
+                                                                style="
+                                                                  border-radius: 6px;
+                                                                  font-size: 16px;
+                                                                  text-align: center;
+                                                                  background-color: inherit;
+                                                                "
+                                                              >
+                                                                <a
+                                                                  href="${verificactionLink}"
+                                                                  style="
+                                                                    background-color: #fe8c4e;
+                                                                    border: 2px
+                                                                      solid
+                                                                      #fe8c4e;
+                                                                    border-color: #fe8c4e;
+                                                                    border-radius: 10px;
+                                                                    border-width: 2px;
+                                                                    color: #fefdfd;
+                                                                    display: inline-block;
+                                                                    font-size: 16px;
+                                                                    font-weight: normal;
+                                                                    letter-spacing: 0px;
+                                                                    line-height: normal;
+                                                                    padding: 12px
+                                                                      18px 12px
+                                                                      18px;
+                                                                    text-align: center;
+                                                                    text-decoration: none;
+                                                                    border-style: solid;
+                                                                  "
+                                                                  target="_blank"
+                                                                  >Recuperar contraseña</a
+                                                                >
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  class="module"
+                                                  role="module"
+                                                  data-type="text"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="100%"
+                                                  style="table-layout: fixed"
+                                                  data-muid="8ea463eb-9361-4dda-8f06-3f95dd696b57.1"
+                                                  data-mc-module-version="2019-10-22"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        style="
+                                                          padding: 25px 20px
+                                                            25px 20px;
+                                                          line-height: 17px;
+                                                          text-align: inherit;
+                                                          background-color: #f6f6f6;
+                                                        "
+                                                        height="100%"
+                                                        valign="top"
+                                                        bgcolor="#F6F6F6"
+                                                        role="module-content"
+                                                      >
+                                                        <div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                line-height: 107%;
+                                                                font-family: inherit;
+                                                                font-size: 14px;
+                                                              "
+                                                              >Recuerda que este
+                                                              enlace </span
+                                                            ><span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                line-height: 107%;
+                                                                color: #fa940a;
+                                                                font-family: inherit;
+                                                                font-size: 14px;
+                                                              "
+                                                              ><strong
+                                                                >caducará en 1
+                                                                hora</strong
+                                                              ></span
+                                                            ><span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                line-height: 107%;
+                                                                font-family: inherit;
+                                                                font-size: 14px;
+                                                              "
+                                                              >.</span
+                                                            ><span
+                                                              style="
+                                                                font-family: inherit;
+                                                                font-size: 14px;
+                                                              "
+                                                            >
+                                                              &nbsp;</span
+                                                            >
+                                                          </div>
+                                                          <div></div>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  class="module"
+                                                  role="module"
+                                                  data-type="text"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="100%"
+                                                  style="table-layout: fixed"
+                                                  data-muid="a265ebb9-ab9c-43e8-9009-54d6151b1600"
+                                                  data-mc-module-version="2019-10-22"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        style="
+                                                          padding: 30px 20px
+                                                            20px 20px;
+                                                          line-height: 19px;
+                                                          text-align: inherit;
+                                                          background-color: #FFFFFFFFFFFFFFFFFFF;
+                                                        "
+                                                        height="100%"
+                                                        valign="top"
+                                                        bgcolor="#FFFFFFFFFFFFFFFFFFF"
+                                                        role="module-content"
+                                                      >
+                                                        <div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: center;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                                font-size: 18px;
+                                                              "
+                                                              ><strong
+                                                                >¡Agradecemos
+                                                                &nbsp;tu&nbsp;</strong
+                                                              ></span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: center;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                                font-size: 18px;
+                                                              "
+                                                              ><strong
+                                                                >confianza en
+                                                                nosotros!</strong
+                                                              ></span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-size: 14px;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                              "
+                                                              >Gracias por ser
+                                                              parte de la
+                                                              transformación
+                                                              digital más grande
+                                                              de productos de
+                                                              belleza y cuidado
+                                                              personal en El
+                                                              Salvador.</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-size: 14px;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                              "
+                                                              >Esperamos que
+                                                              disfrutes de una
+                                                              experiencia de
+                                                              compra excepcional
+                                                              y que encuentres
+                                                              los productos de
+                                                              belleza que estás
+                                                              buscando.&nbsp;</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                line-height: 107%;
+                                                                font-size: 14px;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                              "
+                                                              >Si tienes alguna
+                                                              pregunta o
+                                                              necesitas ayuda,
+                                                              no dudes en
+                                                              ponerte en
+                                                              contacto con
+                                                              nuestro equipo de
+                                                              soporte.&nbsp;</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: left;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                font-size: 14px;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                              "
+                                                              >¡</span
+                                                            ><span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                                font-size: 14px;
+                                                              "
+                                                              >Estamos aquí para
+                                                              lo que necesites!</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: left;
+                                                            "
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: left;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                box-sizing: border-box;
+                                                                padding-top: 0px;
+                                                                padding-right: 0px;
+                                                                padding-bottom: 0px;
+                                                                padding-left: 0px;
+                                                                margin-top: 0px;
+                                                                margin-right: 0px;
+                                                                margin-bottom: 0px;
+                                                                margin-left: 0px;
+                                                                font-style: inherit;
+                                                                font-variant-ligatures: inherit;
+                                                                font-variant-caps: inherit;
+                                                                font-variant-numeric: inherit;
+                                                                font-variant-east-asian: inherit;
+                                                                font-variant-alternates: inherit;
+                                                                font-variant-position: inherit;
+                                                                font-weight: inherit;
+                                                                font-stretch: inherit;
+                                                                line-height: inherit;
+                                                                font-family: inherit;
+                                                                font-optical-sizing: inherit;
+                                                                font-kerning: inherit;
+                                                                font-feature-settings: inherit;
+                                                                font-variation-settings: inherit;
+                                                                font-size: 14px;
+                                                                vertical-align: baseline;
+                                                                border-top-width: 0px;
+                                                                border-right-width: 0px;
+                                                                border-bottom-width: 0px;
+                                                                border-left-width: 0px;
+                                                                border-top-style: initial;
+                                                                border-right-style: initial;
+                                                                border-bottom-style: initial;
+                                                                border-left-style: initial;
+                                                                border-top-color: initial;
+                                                                border-right-color: initial;
+                                                                border-bottom-color: initial;
+                                                                border-left-color: initial;
+                                                                border-image-source: initial;
+                                                                border-image-slice: initial;
+                                                                border-image-width: initial;
+                                                                border-image-outset: initial;
+                                                                border-image-repeat: initial;
+                                                                text-align: left;
+                                                                color: #000000;
+                                                                letter-spacing: normal;
+                                                                orphans: 2;
+                                                                text-indent: 0px;
+                                                                text-transform: none;
+                                                                widows: 2;
+                                                                word-spacing: 0px;
+                                                                -webkit-text-stroke-width: 0px;
+                                                                white-space-collapse: preserve;
+                                                                text-wrap: wrap;
+                                                                background-color: rgb(
+                                                                  255,
+                                                                  255,
+                                                                  255
+                                                                );
+                                                                text-decoration-thickness: initial;
+                                                                text-decoration-style: initial;
+                                                                text-decoration-color: initial;
+                                                              "
+                                                              >Saludos cordiales,&nbsp;</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: left;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                box-sizing: border-box;
+                                                                padding-top: 0px;
+                                                                padding-right: 0px;
+                                                                padding-bottom: 0px;
+                                                                padding-left: 0px;
+                                                                margin-top: 0px;
+                                                                margin-right: 0px;
+                                                                margin-bottom: 0px;
+                                                                margin-left: 0px;
+                                                                font-style: inherit;
+                                                                font-variant-ligatures: inherit;
+                                                                font-variant-caps: inherit;
+                                                                font-variant-numeric: inherit;
+                                                                font-variant-east-asian: inherit;
+                                                                font-variant-alternates: inherit;
+                                                                font-variant-position: inherit;
+                                                                font-weight: inherit;
+                                                                font-stretch: inherit;
+                                                                line-height: inherit;
+                                                                font-family: inherit;
+                                                                font-optical-sizing: inherit;
+                                                                font-kerning: inherit;
+                                                                font-feature-settings: inherit;
+                                                                font-variation-settings: inherit;
+                                                                font-size: 14px;
+                                                                vertical-align: baseline;
+                                                                border-top-width: 0px;
+                                                                border-right-width: 0px;
+                                                                border-bottom-width: 0px;
+                                                                border-left-width: 0px;
+                                                                border-top-style: initial;
+                                                                border-right-style: initial;
+                                                                border-bottom-style: initial;
+                                                                border-left-style: initial;
+                                                                border-top-color: initial;
+                                                                border-right-color: initial;
+                                                                border-bottom-color: initial;
+                                                                border-left-color: initial;
+                                                                border-image-source: initial;
+                                                                border-image-slice: initial;
+                                                                border-image-width: initial;
+                                                                border-image-outset: initial;
+                                                                border-image-repeat: initial;
+                                                                text-align: left;
+                                                                color: #000000;
+                                                                letter-spacing: normal;
+                                                                orphans: 2;
+                                                                text-indent: 0px;
+                                                                text-transform: none;
+                                                                widows: 2;
+                                                                word-spacing: 0px;
+                                                                -webkit-text-stroke-width: 0px;
+                                                                white-space-collapse: preserve;
+                                                                text-wrap: wrap;
+                                                                background-color: rgb(
+                                                                  255,
+                                                                  255,
+                                                                  255
+                                                                );
+                                                                text-decoration-thickness: initial;
+                                                                text-decoration-style: initial;
+                                                                text-decoration-color: initial;
+                                                              "
+                                                              >Tu equipo</span
+                                                            >&nbsp;
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: left;
+                                                            "
+                                                          >
+                                                            <a
+                                                              href=""
+                                                              title='&lt;span data-offset-key="ditug-0-0" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt;&lt;span data-text="true" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt;AMA&lt;/span&gt;&lt;/span&gt;&lt;span data-offset-key="ditug-0-1" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt;&lt;span data-text="true" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span data-offset-key="ditug-0-2" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt;&lt;span data-text="true" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt;BELLE&lt;/span&gt;&lt;/span&gt;'
+                                                              ><span
+                                                                style="
+                                                                  box-sizing: border-box;
+                                                                  padding-top: 0px;
+                                                                  padding-right: 0px;
+                                                                  padding-bottom: 0px;
+                                                                  padding-left: 0px;
+                                                                  margin-top: 0px;
+                                                                  margin-right: 0px;
+                                                                  margin-bottom: 0px;
+                                                                  margin-left: 0px;
+                                                                  font-style: inherit;
+                                                                  font-variant-ligatures: inherit;
+                                                                  font-variant-caps: inherit;
+                                                                  font-variant-numeric: inherit;
+                                                                  font-variant-east-asian: inherit;
+                                                                  font-variant-alternates: inherit;
+                                                                  font-variant-position: inherit;
+                                                                  font-weight: bold;
+                                                                  font-stretch: inherit;
+                                                                  line-height: inherit;
+                                                                  font-family: inherit;
+                                                                  font-optical-sizing: inherit;
+                                                                  font-kerning: inherit;
+                                                                  font-feature-settings: inherit;
+                                                                  font-variation-settings: inherit;
+                                                                  font-size: 14px;
+                                                                  vertical-align: baseline;
+                                                                  border-top-width: 0px;
+                                                                  border-right-width: 0px;
+                                                                  border-bottom-width: 0px;
+                                                                  border-left-width: 0px;
+                                                                  border-top-style: initial;
+                                                                  border-right-style: initial;
+                                                                  border-bottom-style: initial;
+                                                                  border-left-style: initial;
+                                                                  border-top-color: initial;
+                                                                  border-right-color: initial;
+                                                                  border-bottom-color: initial;
+                                                                  border-left-color: initial;
+                                                                  border-image-source: initial;
+                                                                  border-image-slice: initial;
+                                                                  border-image-width: initial;
+                                                                  border-image-outset: initial;
+                                                                  border-image-repeat: initial;
+                                                                  text-align: left;
+                                                                  color: #1188e6;
+                                                                  letter-spacing: normal;
+                                                                  orphans: 2;
+                                                                  text-indent: 0px;
+                                                                  text-transform: none;
+                                                                  widows: 2;
+                                                                  word-spacing: 0px;
+                                                                  -webkit-text-stroke-width: 0px;
+                                                                  white-space-collapse: preserve;
+                                                                  text-wrap: wrap;
+                                                                  background-color: rgb(
+                                                                    255,
+                                                                    255,
+                                                                    255
+                                                                  );
+                                                                  text-decoration-thickness: initial;
+                                                                  text-decoration-style: initial;
+                                                                  text-decoration-color: initial;
+                                                                  outline-color: initial;
+                                                                  outline-style: none;
+                                                                  outline-width: initial;
+                                                                  text-decoration-line: none;
+                                                                  transition-behavior: normal;
+                                                                  transition-duration: 0.3s;
+                                                                  transition-timing-function: ease;
+                                                                  transition-delay: 0s;
+                                                                  transition-property: color;
+                                                                "
+                                                                >AMA</span
+                                                              ><span
+                                                                style="
+                                                                  font-size: 8px;
+                                                                "
+                                                              >
+                                                              </span
+                                                              ><span
+                                                                style="
+                                                                  box-sizing: border-box;
+                                                                  padding-top: 0px;
+                                                                  padding-right: 0px;
+                                                                  padding-bottom: 0px;
+                                                                  padding-left: 0px;
+                                                                  margin-top: 0px;
+                                                                  margin-right: 0px;
+                                                                  margin-bottom: 0px;
+                                                                  margin-left: 0px;
+                                                                  font-style: inherit;
+                                                                  font-variant-ligatures: inherit;
+                                                                  font-variant-caps: inherit;
+                                                                  font-variant-numeric: inherit;
+                                                                  font-variant-east-asian: inherit;
+                                                                  font-variant-alternates: inherit;
+                                                                  font-variant-position: inherit;
+                                                                  font-weight: bold;
+                                                                  font-stretch: inherit;
+                                                                  line-height: inherit;
+                                                                  font-family: inherit;
+                                                                  font-optical-sizing: inherit;
+                                                                  font-kerning: inherit;
+                                                                  font-feature-settings: inherit;
+                                                                  font-variation-settings: inherit;
+                                                                  font-size: 14px;
+                                                                  vertical-align: baseline;
+                                                                  border-top-width: 0px;
+                                                                  border-right-width: 0px;
+                                                                  border-bottom-width: 0px;
+                                                                  border-left-width: 0px;
+                                                                  border-top-style: initial;
+                                                                  border-right-style: initial;
+                                                                  border-bottom-style: initial;
+                                                                  border-left-style: initial;
+                                                                  border-top-color: initial;
+                                                                  border-right-color: initial;
+                                                                  border-bottom-color: initial;
+                                                                  border-left-color: initial;
+                                                                  border-image-source: initial;
+                                                                  border-image-slice: initial;
+                                                                  border-image-width: initial;
+                                                                  border-image-outset: initial;
+                                                                  border-image-repeat: initial;
+                                                                  text-align: left;
+                                                                  color: #1188e6;
+                                                                  letter-spacing: normal;
+                                                                  orphans: 2;
+                                                                  text-indent: 0px;
+                                                                  text-transform: none;
+                                                                  widows: 2;
+                                                                  word-spacing: 0px;
+                                                                  -webkit-text-stroke-width: 0px;
+                                                                  white-space-collapse: preserve;
+                                                                  text-wrap: wrap;
+                                                                  background-color: rgb(
+                                                                    255,
+                                                                    255,
+                                                                    255
+                                                                  );
+                                                                  text-decoration-thickness: initial;
+                                                                  text-decoration-style: initial;
+                                                                  text-decoration-color: initial;
+                                                                  outline-color: initial;
+                                                                  outline-style: none;
+                                                                  outline-width: initial;
+                                                                  text-decoration-line: none;
+                                                                  transition-behavior: normal;
+                                                                  transition-duration: 0.3s;
+                                                                  transition-timing-function: ease;
+                                                                  transition-delay: 0s;
+                                                                  transition-property: color;
+                                                                "
+                                                                >BELLE</span
+                                                              ></a
+                                                            >&nbsp;
+                                                          </div>
+                                                          <div></div>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  class="module"
+                                                  data-role="module-button"
+                                                  data-type="button"
+                                                  role="module"
+                                                  style="table-layout: fixed"
+                                                  width="100%"
+                                                  data-muid="3c6b1ba6-7302-4e7f-a38f-337e93aa6fdf.1"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        align="center"
+                                                        bgcolor=" #FFFFFFFFFFFFFFFFFFF"
+                                                        class="outer-td"
+                                                        style="
+                                                          padding: 5px 30px 5px
+                                                            30px;
+                                                          background-color: #FFFFFFFFFFFFFFFFFFF;
+                                                        "
+                                                      >
+                                                        <table
+                                                          border="0"
+                                                          cellpadding="0"
+                                                          cellspacing="0"
+                                                          class="wrapper-mobile"
+                                                          style="
+                                                            text-align: center;
+                                                          "
+                                                        >
+                                                          <tbody>
+                                                            <tr>
+                                                              <td
+                                                                align="center"
+                                                                bgcolor="#0c0c0c"
+                                                                class="inner-td"
+                                                                style="
+                                                                  border-radius: 6px;
+                                                                  font-size: 16px;
+                                                                  text-align: center;
+                                                                  background-color: inherit;
+                                                                "
+                                                              >
+                                                                <a
+                                                                  href="https://api.whatsapp.com/send?phone=50370438848&text=%C2%A1Hola!%20Tengo%20una%20consulta"
+                                                                  style="
+                                                                    background-color: #0c0c0c;
+                                                                    border: 2px
+                                                                      solid
+                                                                      #0c0c0c;
+                                                                    border-color: #0c0c0c;
+                                                                    border-radius: 4px;
+                                                                    border-width: 2px;
+                                                                    color: #fefdfd;
+                                                                    display: inline-block;
+                                                                    font-size: 12px;
+                                                                    font-weight: normal;
+                                                                    letter-spacing: 0px;
+                                                                    line-height: normal;
+                                                                    padding: 5px
+                                                                      10px 5px
+                                                                      10px;
+                                                                    text-align: center;
+                                                                    text-decoration: none;
+                                                                    border-style: solid;
+                                                                  "
+                                                                  target="_blank"
+                                                                  >Contact
+                                                                  Support</a
+                                                                >
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                          <!--[if mso]>
+                                  </td>
+                                </tr>
+                              </table>
+                            </center>
+                            <![endif]-->
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </center>
+  </body>
+</html>`,
+      /*
       html: `
       <b>Haga click en el siguiente enlace o péguelo en su navegador para completar el proceso:</b>
       <a href="${verificactionLink}">${verificactionLink}</a>
       `, // html body
+      */
     });
   } catch (error) {
     emailStatus = error;
@@ -579,9 +3228,1302 @@ const generarCodigo = async (req, res) => {
     try {
       //Envio de eamil
       await transporter.sendMail({
-        from: '"Soporte Bellmart S.A.de C.V." <no-reply@ama-belle.com>', // sender address
+        from: '"Soporte Ama Belle S.A.de C.V." <no-reply@ama-belle.com>', // sender address
         to: email, // list of receivers
         subject: "Su clave de acesso es :" + code, // Subject line
+      
+        html:`
+        <html
+  data-editor-version="2"
+  class="sg-campaigns"
+  xmlns="http://www.w3.org/1999/xhtml"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!--<![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          width: 600px;
+          margin: 0 auto;
+        }
+        table {
+          border-collapse: collapse;
+        }
+        table,
+        td {
+          mso-table-lspace: 0pt;
+          mso-table-rspace: 0pt;
+        }
+        img {
+          -ms-interpolation-mode: bicubic;
+        }
+      </style>
+    <![endif]-->
+    <style type="text/css">
+      body,
+      p,
+      div {
+        font-family: inherit;
+        font-size: 14px;
+      }
+      body {
+        color: #000000;
+      }
+      body a {
+        color: #1188e6;
+        text-decoration: none;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      table.wrapper {
+        width: 100% !important;
+        table-layout: fixed;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      img.max-width {
+        max-width: 100% !important;
+      }
+      .column.of-2 {
+        width: 50%;
+      }
+      .column.of-3 {
+        width: 33.333%;
+      }
+      .column.of-4 {
+        width: 25%;
+      }
+      ul ul ul ul {
+        list-style-type: disc !important;
+      }
+      ol ol {
+        list-style-type: lower-roman !important;
+      }
+      ol ol ol {
+        list-style-type: lower-latin !important;
+      }
+      ol ol ol ol {
+        list-style-type: decimal !important;
+      }
+      @media screen and (max-width: 480px) {
+        .preheader .rightColumnContent,
+        .footer .rightColumnContent {
+          text-align: left !important;
+        }
+        .preheader .rightColumnContent div,
+        .preheader .rightColumnContent span,
+        .footer .rightColumnContent div,
+        .footer .rightColumnContent span {
+          text-align: left !important;
+        }
+        .preheader .rightColumnContent,
+        .preheader .leftColumnContent {
+          font-size: 80% !important;
+          padding: 5px 0;
+        }
+        table.wrapper-mobile {
+          width: 100% !important;
+          table-layout: fixed;
+        }
+        img.max-width {
+          height: auto !important;
+          max-width: 100% !important;
+        }
+        a.bulletproof-button {
+          display: block !important;
+          width: auto !important;
+          font-size: 80%;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        .columns {
+          width: 100% !important;
+        }
+        .column {
+          display: block !important;
+          width: 100% !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+        .social-icon-column {
+          display: inline-block !important;
+        }
+      }
+    </style>
+    <!--user entered Head Start-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Muli", sans-serif;
+      }
+    </style>
+    <!--End Head user entered-->
+  </head>
+  <body>
+    <center
+      class="wrapper"
+      data-link-color="#1188E6"
+      data-body-style="font-size:14px; font-family:inherit; color:#000000; background-color:#FFFFFF;"
+    >
+      <div class="webkit">
+        <table
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          width="100%"
+          class="wrapper"
+          bgcolor="#FFFFFF"
+        >
+          <tr>
+            <td valign="top" bgcolor="#FFFFFF" width="100%">
+              <table
+                width="100%"
+                role="content-container"
+                class="outer"
+                align="center"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+              >
+                <tr>
+                  <td width="100%">
+                    <table
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                    >
+                      <tr>
+                        <td>
+                          <!--[if mso]>
+    <center>
+    <table><tr><td width="600">
+  <![endif]-->
+                          <table
+                            width="100%"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="width: 100%; max-width: 600px"
+                            align="center"
+                          >
+                            <tr>
+                              <td
+                                role="modules-container"
+                                style="
+                                  padding: 0px 0px 0px 0px;
+                                  color: #000000;
+                                  text-align: left;
+                                "
+                                bgcolor="#FFFFFF"
+                                width="100%"
+                                align="left"
+                              >
+                                <table
+                                  class="module preheader preheader-hide"
+                                  role="module"
+                                  data-type="preheader"
+                                  border="0"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  width="100%"
+                                  style="
+                                    display: none !important;
+                                    mso-hide: all;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    color: transparent;
+                                    height: 0;
+                                    width: 0;
+                                  "
+                                >
+                                  <tr>
+                                    <td role="module-content">
+                                      <p></p>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table
+                                  border="0"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  align="center"
+                                  width="100%"
+                                  role="module"
+                                  data-type="columns"
+                                  style="padding: 30px 20px 30px 20px"
+                                  bgcolor="#fFFFFFFFFFFFFFFFF"
+                                  data-distribution="1"
+                                >
+                                  <tbody>
+                                    <tr role="module-content">
+                                      <td height="100%" valign="top">
+                                        <table
+                                          width="540"
+                                          style="
+                                            width: 540px;
+                                            border-spacing: 0;
+                                            border-collapse: collapse;
+                                            margin: 0px 10px 0px 10px;
+                                          "
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          align="left"
+                                          border="0"
+                                          bgcolor=""
+                                          class="column column-0"
+                                        >
+                                          <tbody>
+                                            <tr>
+                                              <td
+                                                style="
+                                                  padding: 0px;
+                                                  margin: 0px;
+                                                  border-spacing: 0;
+                                                "
+                                              >
+                                                <table
+                                                  class="wrapper"
+                                                  role="module"
+                                                  data-type="image"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="100%"
+                                                  style="table-layout: fixed"
+                                                  data-muid="d8508015-a2cb-488c-9877-d46adf313282"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        style="
+                                                          font-size: 6px;
+                                                          line-height: 10px;
+                                                          padding: 18px 0px 18px
+                                                            0px;
+                                                        "
+                                                        valign="top"
+                                                        align="center"
+                                                      >
+                                                        <a href="ama-belle.com"
+                                                          ><img
+                                                            class="max-width"
+                                                            border="0"
+                                                            style="
+                                                              display: block;
+                                                              color: #000000;
+                                                              text-decoration: none;
+                                                              font-family: Helvetica,
+                                                                arial,
+                                                                sans-serif;
+                                                              font-size: 16px;
+                                                              max-width: 100% !important;
+                                                              width: 100%;
+                                                              height: auto !important;
+                                                            "
+                                                            width="540"
+                                                            alt=""
+                                                            data-proportionally-constrained="true"
+                                                            data-responsive="true"
+                                                            src="https://bellmart.s3.amazonaws.com/ama-belle-logo-big.png"
+                                                        /></a>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  class="module"
+                                                  role="module"
+                                                  data-type="text"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="100%"
+                                                  style="table-layout: fixed"
+                                                  data-muid="af2e984f-3bd4-4b6a-ab14-c1c1fad4301a"
+                                                  data-mc-module-version="2019-10-22"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        style="
+                                                          padding: 25px 0px 25px
+                                                            0px;
+                                                          line-height: 25px;
+                                                          text-align: inherit;
+                                                          background-color: #FFFFFFFFFFFFFFF;
+                                                        "
+                                                        height="100%"
+                                                        valign="top"
+                                                        bgcolor="#FFFFFFFFFFFFFFF"
+                                                        role="module-content"
+                                                      >
+                                                        <div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: center;
+                                                            "
+                                                          >
+                                                            &nbsp;<span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-size: 14px;
+                                                              "
+                                                              >¡Bienvenido a
+                                                              AMA</span
+                                                            ><span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-size: 8px;
+                                                              "
+                                                            >
+                                                            </span
+                                                            ><span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-size: 14px;
+                                                              "
+                                                              >BELLE</span
+                                                            ><span
+                                                              style="
+                                                                box-sizing: border-box;
+                                                                padding-top: 0px;
+                                                                padding-right: 0px;
+                                                                padding-bottom: 0px;
+                                                                padding-left: 0px;
+                                                                margin-top: 0px;
+                                                                margin-right: 0px;
+                                                                margin-bottom: 0px;
+                                                                margin-left: 0px;
+                                                                font-style: inherit;
+                                                                font-variant-ligatures: inherit;
+                                                                font-variant-caps: inherit;
+                                                                font-variant-numeric: inherit;
+                                                                font-variant-east-asian: inherit;
+                                                                font-variant-alternates: inherit;
+                                                                font-variant-position: inherit;
+                                                                font-weight: inherit;
+                                                                font-stretch: inherit;
+                                                                line-height: inherit;
+                                                                font-family: inherit;
+                                                                font-optical-sizing: inherit;
+                                                                font-kerning: inherit;
+                                                                font-feature-settings: inherit;
+                                                                font-variation-settings: inherit;
+                                                                font-size: 14px;
+                                                                vertical-align: baseline;
+                                                                border-top-width: 0px;
+                                                                border-right-width: 0px;
+                                                                border-bottom-width: 0px;
+                                                                border-left-width: 0px;
+                                                                border-top-style: initial;
+                                                                border-right-style: initial;
+                                                                border-bottom-style: initial;
+                                                                border-left-style: initial;
+                                                                border-top-color: initial;
+                                                                border-right-color: initial;
+                                                                border-bottom-color: initial;
+                                                                border-left-color: initial;
+                                                                border-image-source: initial;
+                                                                border-image-slice: initial;
+                                                                border-image-width: initial;
+                                                                border-image-outset: initial;
+                                                                border-image-repeat: initial;
+                                                                color: #000000;
+                                                                letter-spacing: normal;
+                                                                orphans: 2;
+                                                                text-align: center;
+                                                                text-indent: 0px;
+                                                                text-transform: none;
+                                                                widows: 2;
+                                                                word-spacing: 0px;
+                                                                -webkit-text-stroke-width: 0px;
+                                                                white-space-collapse: preserve;
+                                                                text-wrap: wrap;
+                                                                background-color: rgb(
+                                                                  246,
+                                                                  246,
+                                                                  246
+                                                                );
+                                                                text-decoration-thickness: initial;
+                                                                text-decoration-style: initial;
+                                                                text-decoration-color: initial;
+                                                                overflow-wrap: break-word;
+                                                              "
+                                                              >!</span
+                                                            >
+                                                            &nbsp;<span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                              "
+                                                              >&nbsp;</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: center;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                              "
+                                                              ><strong
+                                                                >“Where Beauty
+                                                                meets
+                                                                technology”</strong
+                                                              ></span
+                                                            ><strong>
+                                                              &nbsp;</strong
+                                                            >
+                                                          </div>
+                                                          <div></div>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  class="module"
+                                                  role="module"
+                                                  data-type="text"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="100%"
+                                                  style="table-layout: fixed"
+                                                  data-muid="8ea463eb-9361-4dda-8f06-3f95dd696b57"
+                                                  data-mc-module-version="2019-10-22"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        style="
+                                                          padding: 25px 20px
+                                                            25px 20px;
+                                                          line-height: 25px;
+                                                          text-align: inherit;
+                                                          background-color: #f6f6f6;
+                                                        "
+                                                        height="100%"
+                                                        valign="top"
+                                                        bgcolor="#F6F6F6"
+                                                        role="module-content"
+                                                      >
+                                                        <div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                              "
+                                                              >Puedes acceder a tu cuenta en <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-size: 14px;
+                                                              "
+                                                              >AMA</span
+                                                            ><span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-size: 8px;
+                                                              "
+                                                            >
+                                                            </span
+                                                            ><span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-size: 14px;
+                                                              "
+                                                              >BELLE</span
+                                                            > ingresando el siguiente código de acceso:</span
+                                                            >
+                                                            &nbsp;
+                                                          </div>
+                                                          <div></div>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  class="module"
+                                                  data-role="module-button"
+                                                  data-type="button"
+                                                  role="module"
+                                                  style="table-layout: fixed"
+                                                  width="100%"
+                                                  data-muid="3c6b1ba6-7302-4e7f-a38f-337e93aa6fdf"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        align="center"
+                                                        bgcolor="#F6F6F6"
+                                                        class="outer-td"
+                                                        style="
+                                                          padding: 0px 0px 0px
+                                                            0px;
+                                                          background-color: #f6f6f6;
+                                                        "
+                                                      >
+                                                        <table
+                                                          border="0"
+                                                          cellpadding="0"
+                                                          cellspacing="0"
+                                                          class="wrapper-mobile"
+                                                          style="
+                                                            text-align: center;
+                                                          "
+                                                        >
+                                                          <tbody>
+                                                            <tr>
+                                                              <td
+                                                                align="center"
+                                                                bgcolor="#FE8C4E"
+                                                                class="inner-td"
+                                                                style="
+                                                                  border-radius: 6px;
+                                                                  font-size: 16px;
+                                                                  text-align: center;
+                                                                  background-color: inherit;
+                                                                "
+                                                              >
+                                                                <h1 style="color: #fe8c4e;font-size: 58px;font-weight: bold;">${code}</h1>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  class="module"
+                                                  role="module"
+                                                  data-type="text"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="100%"
+                                                  style="table-layout: fixed"
+                                                  data-muid="8ea463eb-9361-4dda-8f06-3f95dd696b57.1"
+                                                  data-mc-module-version="2019-10-22"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        style="
+                                                          padding: 25px 20px
+                                                            25px 20px;
+                                                          line-height: 17px;
+                                                          text-align: inherit;
+                                                          background-color: #f6f6f6;
+                                                        "
+                                                        height="100%"
+                                                        valign="top"
+                                                        bgcolor="#F6F6F6"
+                                                        role="module-content"
+                                                      >
+                                                        <div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                line-height: 107%;
+                                                                font-family: inherit;
+                                                                font-size: 14px;
+                                                              "
+                                                              >Regresa a la página de inicio de sesión e ingresa el código para confirmar tu identidad.</span
+                                                            ><span
+                                                              style="
+                                                                font-family: inherit;
+                                                                font-size: 14px;
+                                                              "
+                                                            >
+                                                              &nbsp;</span
+                                                            >
+                                                          </div>
+                                                          <div></div>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  class="module"
+                                                  role="module"
+                                                  data-type="text"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="100%"
+                                                  style="table-layout: fixed"
+                                                  data-muid="a265ebb9-ab9c-43e8-9009-54d6151b1600"
+                                                  data-mc-module-version="2019-10-22"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        style="
+                                                          padding: 30px 20px
+                                                            20px 20px;
+                                                          line-height: 19px;
+                                                          text-align: inherit;
+                                                          background-color: #FFFFFFFFFFFFFFFFFFF;
+                                                        "
+                                                        height="100%"
+                                                        valign="top"
+                                                        bgcolor="#FFFFFFFFFFFFFFFFFFF"
+                                                        role="module-content"
+                                                      >
+                                                        <div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: center;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                                font-size: 18px;
+                                                              "
+                                                              ><strong
+                                                                >¡Agradecemos
+                                                                &nbsp;tu&nbsp;</strong
+                                                              ></span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: center;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                                font-size: 18px;
+                                                              "
+                                                              ><strong
+                                                                >confianza en
+                                                                nosotros!</strong
+                                                              ></span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-size: 14px;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                              "
+                                                              >Gracias por ser
+                                                              parte de la
+                                                              transformación
+                                                              digital más grande
+                                                              de productos de
+                                                              belleza y cuidado
+                                                              personal en El
+                                                              Salvador.</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-size: 14px;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                              "
+                                                              >Esperamos que
+                                                              disfrutes de una
+                                                              experiencia de
+                                                              compra excepcional
+                                                              y que encuentres
+                                                              los productos de
+                                                              belleza que estás
+                                                              buscando.&nbsp;</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                line-height: 107%;
+                                                                font-size: 14px;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                              "
+                                                              >Si tienes alguna
+                                                              pregunta o
+                                                              necesitas ayuda,
+                                                              no dudes en
+                                                              ponerte en
+                                                              contacto con
+                                                              nuestro equipo de
+                                                              soporte.&nbsp;</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: justify;
+                                                            "
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: left;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                font-size: 14px;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                              "
+                                                              >¡</span
+                                                            ><span
+                                                              style="
+                                                                overflow-wrap: break-word;
+                                                                font-family: inherit;
+                                                                color: #0a0a0a;
+                                                                font-size: 14px;
+                                                              "
+                                                              >Estamos aquí para
+                                                              lo que necesites!</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: left;
+                                                            "
+                                                          >
+                                                            <br />
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: left;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                box-sizing: border-box;
+                                                                padding-top: 0px;
+                                                                padding-right: 0px;
+                                                                padding-bottom: 0px;
+                                                                padding-left: 0px;
+                                                                margin-top: 0px;
+                                                                margin-right: 0px;
+                                                                margin-bottom: 0px;
+                                                                margin-left: 0px;
+                                                                font-style: inherit;
+                                                                font-variant-ligatures: inherit;
+                                                                font-variant-caps: inherit;
+                                                                font-variant-numeric: inherit;
+                                                                font-variant-east-asian: inherit;
+                                                                font-variant-alternates: inherit;
+                                                                font-variant-position: inherit;
+                                                                font-weight: inherit;
+                                                                font-stretch: inherit;
+                                                                line-height: inherit;
+                                                                font-family: inherit;
+                                                                font-optical-sizing: inherit;
+                                                                font-kerning: inherit;
+                                                                font-feature-settings: inherit;
+                                                                font-variation-settings: inherit;
+                                                                font-size: 14px;
+                                                                vertical-align: baseline;
+                                                                border-top-width: 0px;
+                                                                border-right-width: 0px;
+                                                                border-bottom-width: 0px;
+                                                                border-left-width: 0px;
+                                                                border-top-style: initial;
+                                                                border-right-style: initial;
+                                                                border-bottom-style: initial;
+                                                                border-left-style: initial;
+                                                                border-top-color: initial;
+                                                                border-right-color: initial;
+                                                                border-bottom-color: initial;
+                                                                border-left-color: initial;
+                                                                border-image-source: initial;
+                                                                border-image-slice: initial;
+                                                                border-image-width: initial;
+                                                                border-image-outset: initial;
+                                                                border-image-repeat: initial;
+                                                                text-align: left;
+                                                                color: #000000;
+                                                                letter-spacing: normal;
+                                                                orphans: 2;
+                                                                text-indent: 0px;
+                                                                text-transform: none;
+                                                                widows: 2;
+                                                                word-spacing: 0px;
+                                                                -webkit-text-stroke-width: 0px;
+                                                                white-space-collapse: preserve;
+                                                                text-wrap: wrap;
+                                                                background-color: rgb(
+                                                                  255,
+                                                                  255,
+                                                                  255
+                                                                );
+                                                                text-decoration-thickness: initial;
+                                                                text-decoration-style: initial;
+                                                                text-decoration-color: initial;
+                                                              "
+                                                              >Saludos cordiales,&nbsp;</span
+                                                            >
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: left;
+                                                            "
+                                                          >
+                                                            <span
+                                                              style="
+                                                                box-sizing: border-box;
+                                                                padding-top: 0px;
+                                                                padding-right: 0px;
+                                                                padding-bottom: 0px;
+                                                                padding-left: 0px;
+                                                                margin-top: 0px;
+                                                                margin-right: 0px;
+                                                                margin-bottom: 0px;
+                                                                margin-left: 0px;
+                                                                font-style: inherit;
+                                                                font-variant-ligatures: inherit;
+                                                                font-variant-caps: inherit;
+                                                                font-variant-numeric: inherit;
+                                                                font-variant-east-asian: inherit;
+                                                                font-variant-alternates: inherit;
+                                                                font-variant-position: inherit;
+                                                                font-weight: inherit;
+                                                                font-stretch: inherit;
+                                                                line-height: inherit;
+                                                                font-family: inherit;
+                                                                font-optical-sizing: inherit;
+                                                                font-kerning: inherit;
+                                                                font-feature-settings: inherit;
+                                                                font-variation-settings: inherit;
+                                                                font-size: 14px;
+                                                                vertical-align: baseline;
+                                                                border-top-width: 0px;
+                                                                border-right-width: 0px;
+                                                                border-bottom-width: 0px;
+                                                                border-left-width: 0px;
+                                                                border-top-style: initial;
+                                                                border-right-style: initial;
+                                                                border-bottom-style: initial;
+                                                                border-left-style: initial;
+                                                                border-top-color: initial;
+                                                                border-right-color: initial;
+                                                                border-bottom-color: initial;
+                                                                border-left-color: initial;
+                                                                border-image-source: initial;
+                                                                border-image-slice: initial;
+                                                                border-image-width: initial;
+                                                                border-image-outset: initial;
+                                                                border-image-repeat: initial;
+                                                                text-align: left;
+                                                                color: #000000;
+                                                                letter-spacing: normal;
+                                                                orphans: 2;
+                                                                text-indent: 0px;
+                                                                text-transform: none;
+                                                                widows: 2;
+                                                                word-spacing: 0px;
+                                                                -webkit-text-stroke-width: 0px;
+                                                                white-space-collapse: preserve;
+                                                                text-wrap: wrap;
+                                                                background-color: rgb(
+                                                                  255,
+                                                                  255,
+                                                                  255
+                                                                );
+                                                                text-decoration-thickness: initial;
+                                                                text-decoration-style: initial;
+                                                                text-decoration-color: initial;
+                                                              "
+                                                              >Tu equipo</span
+                                                            >&nbsp;
+                                                          </div>
+                                                          <div
+                                                            style="
+                                                              font-family: inherit;
+                                                              text-align: left;
+                                                            "
+                                                          >
+                                                            <a
+                                                              href=""
+                                                              title='&lt;span data-offset-key="ditug-0-0" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt;&lt;span data-text="true" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt;AMA&lt;/span&gt;&lt;/span&gt;&lt;span data-offset-key="ditug-0-1" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt;&lt;span data-text="true" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span data-offset-key="ditug-0-2" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt;&lt;span data-text="true" style="box-sizing: border-box; padding: 0px; margin: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 14px; vertical-align: baseline; border: 0px;"&gt;BELLE&lt;/span&gt;&lt;/span&gt;'
+                                                              ><span
+                                                                style="
+                                                                  box-sizing: border-box;
+                                                                  padding-top: 0px;
+                                                                  padding-right: 0px;
+                                                                  padding-bottom: 0px;
+                                                                  padding-left: 0px;
+                                                                  margin-top: 0px;
+                                                                  margin-right: 0px;
+                                                                  margin-bottom: 0px;
+                                                                  margin-left: 0px;
+                                                                  font-style: inherit;
+                                                                  font-variant-ligatures: inherit;
+                                                                  font-variant-caps: inherit;
+                                                                  font-variant-numeric: inherit;
+                                                                  font-variant-east-asian: inherit;
+                                                                  font-variant-alternates: inherit;
+                                                                  font-variant-position: inherit;
+                                                                  font-weight: bold;
+                                                                  font-stretch: inherit;
+                                                                  line-height: inherit;
+                                                                  font-family: inherit;
+                                                                  font-optical-sizing: inherit;
+                                                                  font-kerning: inherit;
+                                                                  font-feature-settings: inherit;
+                                                                  font-variation-settings: inherit;
+                                                                  font-size: 14px;
+                                                                  vertical-align: baseline;
+                                                                  border-top-width: 0px;
+                                                                  border-right-width: 0px;
+                                                                  border-bottom-width: 0px;
+                                                                  border-left-width: 0px;
+                                                                  border-top-style: initial;
+                                                                  border-right-style: initial;
+                                                                  border-bottom-style: initial;
+                                                                  border-left-style: initial;
+                                                                  border-top-color: initial;
+                                                                  border-right-color: initial;
+                                                                  border-bottom-color: initial;
+                                                                  border-left-color: initial;
+                                                                  border-image-source: initial;
+                                                                  border-image-slice: initial;
+                                                                  border-image-width: initial;
+                                                                  border-image-outset: initial;
+                                                                  border-image-repeat: initial;
+                                                                  text-align: left;
+                                                                  color: #1188e6;
+                                                                  letter-spacing: normal;
+                                                                  orphans: 2;
+                                                                  text-indent: 0px;
+                                                                  text-transform: none;
+                                                                  widows: 2;
+                                                                  word-spacing: 0px;
+                                                                  -webkit-text-stroke-width: 0px;
+                                                                  white-space-collapse: preserve;
+                                                                  text-wrap: wrap;
+                                                                  background-color: rgb(
+                                                                    255,
+                                                                    255,
+                                                                    255
+                                                                  );
+                                                                  text-decoration-thickness: initial;
+                                                                  text-decoration-style: initial;
+                                                                  text-decoration-color: initial;
+                                                                  outline-color: initial;
+                                                                  outline-style: none;
+                                                                  outline-width: initial;
+                                                                  text-decoration-line: none;
+                                                                  transition-behavior: normal;
+                                                                  transition-duration: 0.3s;
+                                                                  transition-timing-function: ease;
+                                                                  transition-delay: 0s;
+                                                                  transition-property: color;
+                                                                "
+                                                                >AMA</span
+                                                              ><span
+                                                                style="
+                                                                  font-size: 8px;
+                                                                "
+                                                              >
+                                                              </span
+                                                              ><span
+                                                                style="
+                                                                  box-sizing: border-box;
+                                                                  padding-top: 0px;
+                                                                  padding-right: 0px;
+                                                                  padding-bottom: 0px;
+                                                                  padding-left: 0px;
+                                                                  margin-top: 0px;
+                                                                  margin-right: 0px;
+                                                                  margin-bottom: 0px;
+                                                                  margin-left: 0px;
+                                                                  font-style: inherit;
+                                                                  font-variant-ligatures: inherit;
+                                                                  font-variant-caps: inherit;
+                                                                  font-variant-numeric: inherit;
+                                                                  font-variant-east-asian: inherit;
+                                                                  font-variant-alternates: inherit;
+                                                                  font-variant-position: inherit;
+                                                                  font-weight: bold;
+                                                                  font-stretch: inherit;
+                                                                  line-height: inherit;
+                                                                  font-family: inherit;
+                                                                  font-optical-sizing: inherit;
+                                                                  font-kerning: inherit;
+                                                                  font-feature-settings: inherit;
+                                                                  font-variation-settings: inherit;
+                                                                  font-size: 14px;
+                                                                  vertical-align: baseline;
+                                                                  border-top-width: 0px;
+                                                                  border-right-width: 0px;
+                                                                  border-bottom-width: 0px;
+                                                                  border-left-width: 0px;
+                                                                  border-top-style: initial;
+                                                                  border-right-style: initial;
+                                                                  border-bottom-style: initial;
+                                                                  border-left-style: initial;
+                                                                  border-top-color: initial;
+                                                                  border-right-color: initial;
+                                                                  border-bottom-color: initial;
+                                                                  border-left-color: initial;
+                                                                  border-image-source: initial;
+                                                                  border-image-slice: initial;
+                                                                  border-image-width: initial;
+                                                                  border-image-outset: initial;
+                                                                  border-image-repeat: initial;
+                                                                  text-align: left;
+                                                                  color: #1188e6;
+                                                                  letter-spacing: normal;
+                                                                  orphans: 2;
+                                                                  text-indent: 0px;
+                                                                  text-transform: none;
+                                                                  widows: 2;
+                                                                  word-spacing: 0px;
+                                                                  -webkit-text-stroke-width: 0px;
+                                                                  white-space-collapse: preserve;
+                                                                  text-wrap: wrap;
+                                                                  background-color: rgb(
+                                                                    255,
+                                                                    255,
+                                                                    255
+                                                                  );
+                                                                  text-decoration-thickness: initial;
+                                                                  text-decoration-style: initial;
+                                                                  text-decoration-color: initial;
+                                                                  outline-color: initial;
+                                                                  outline-style: none;
+                                                                  outline-width: initial;
+                                                                  text-decoration-line: none;
+                                                                  transition-behavior: normal;
+                                                                  transition-duration: 0.3s;
+                                                                  transition-timing-function: ease;
+                                                                  transition-delay: 0s;
+                                                                  transition-property: color;
+                                                                "
+                                                                >BELLE</span
+                                                              ></a
+                                                            >&nbsp;
+                                                          </div>
+                                                          <div></div>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <table
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  class="module"
+                                                  data-role="module-button"
+                                                  data-type="button"
+                                                  role="module"
+                                                  style="table-layout: fixed"
+                                                  width="100%"
+                                                  data-muid="3c6b1ba6-7302-4e7f-a38f-337e93aa6fdf.1"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        align="center"
+                                                        bgcolor=" #FFFFFFFFFFFFFFFFFFF"
+                                                        class="outer-td"
+                                                        style="
+                                                          padding: 5px 30px 5px
+                                                            30px;
+                                                          background-color: #FFFFFFFFFFFFFFFFFFF;
+                                                        "
+                                                      >
+                                                        <table
+                                                          border="0"
+                                                          cellpadding="0"
+                                                          cellspacing="0"
+                                                          class="wrapper-mobile"
+                                                          style="
+                                                            text-align: center;
+                                                          "
+                                                        >
+                                                          <tbody>
+                                                            <tr>
+                                                              <td
+                                                                align="center"
+                                                                bgcolor="#0c0c0c"
+                                                                class="inner-td"
+                                                                style="
+                                                                  border-radius: 6px;
+                                                                  font-size: 16px;
+                                                                  text-align: center;
+                                                                  background-color: inherit;
+                                                                "
+                                                              >
+                                                                <a
+                                                                  href="https://api.whatsapp.com/send?phone=50370438848&text=%C2%A1Hola!%20Tengo%20una%20consulta"
+                                                                  style="
+                                                                    background-color: #0c0c0c;
+                                                                    border: 2px
+                                                                      solid
+                                                                      #0c0c0c;
+                                                                    border-color: #0c0c0c;
+                                                                    border-radius: 4px;
+                                                                    border-width: 2px;
+                                                                    color: #fefdfd;
+                                                                    display: inline-block;
+                                                                    font-size: 12px;
+                                                                    font-weight: normal;
+                                                                    letter-spacing: 0px;
+                                                                    line-height: normal;
+                                                                    padding: 5px
+                                                                      10px 5px
+                                                                      10px;
+                                                                    text-align: center;
+                                                                    text-decoration: none;
+                                                                    border-style: solid;
+                                                                  "
+                                                                  target="_blank"
+                                                                  >Contact
+                                                                  Support</a
+                                                                >
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                          <!--[if mso]>
+                                  </td>
+                                </tr>
+                              </table>
+                            </center>
+                            <![endif]-->
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </center>
+  </body>
+</html> `,
+      
+      
+      /*
         html: `
       <div style="box-sizing:border-box;width:100%;height:100%;margin:0;padding:0;background:#f1f1f1!important;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"> 
       <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;max-width:650px;border:1px solid #eaeaea;table-layout:auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"> 
@@ -655,6 +4597,7 @@ const generarCodigo = async (req, res) => {
   </table>
   </div>       
       `, // html body
+      */
       });
     } catch (error) {
       emailStatus = error;
