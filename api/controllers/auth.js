@@ -1750,7 +1750,7 @@ const forgotPassword = async (req, res) => {
     //Envio de eamil
 
     await transporter.sendMail({
-      from: '"Soporte Bellmart S.A.de C.V." <no-reply@ama-belle.com>', // sender address
+      from: '"Soporte ama-belle" <no-reply@ama-belle.com>', // sender address
       to: email, // list of receivers
       subject: "Recuperacion de Contraseña", // Subject line
       html:`
@@ -3228,7 +3228,7 @@ const generarCodigo = async (req, res) => {
     try {
       //Envio de eamil
       await transporter.sendMail({
-        from: '"Soporte Ama Belle S.A.de C.V." <no-reply@ama-belle.com>', // sender address
+        from: '"Soporte Ama Belle " <no-reply@ama-belle.com>', // sender address
         to: email, // list of receivers
         subject: "Su clave de acesso es :" + code, // Subject line
       
