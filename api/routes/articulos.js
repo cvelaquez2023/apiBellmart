@@ -13,12 +13,14 @@ const {
   putVerTienda,
   ActualizarPeso,
   gettodos,
+  getItemsMarca,
 } = require("../controllers/articulo");
 const authMiddleware = require("../middleware/session");
 const checkRol = require("../middleware/rol");
 const { validatorItem, PutItem } = require("../validators/articulo");
 const router = express.Router();
 
+router.get("/marca/", getItemsMarca);
 router.get("/cat/", getItemsCat);
 router.get("/subcat/", getItemsSubCat);
 router.get("/tipo/", getItemsTipo);

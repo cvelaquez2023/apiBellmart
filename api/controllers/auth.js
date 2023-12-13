@@ -184,7 +184,7 @@ const registerCtrl = async (req, res) => {
       //no-reply@bellmart.com
       //let emailStatus = "Ok";
       await transporter.sendMail({
-        from: '"Soporte Ama Belle S.A.de C.V." <no-reply@ama-belle.com>', // sender address
+        from: '"Soporte Ama Belle " <no-reply@ama-belle.com>', // sender address
         to: req.E_Mail, // list of receivers
         subject: "Activa tu cuenta de Ama Belle", // Subject line
         html: `
